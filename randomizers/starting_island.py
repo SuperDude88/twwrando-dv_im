@@ -1,6 +1,6 @@
 
 import tweaks
-from class_ms import YamlOrderedDictLoader
+from class_creator.class_ms import YamlOrderedDictLoader
 
 import os
 from paths import DATA_PATH

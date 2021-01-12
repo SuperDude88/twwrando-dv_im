@@ -13,7 +13,7 @@ import xml_func as xfx
 import random
 import collections
 from collections import OrderedDict
-from class_ms import *
+from class_creator.class_ms import *
 
 import os
 import gc

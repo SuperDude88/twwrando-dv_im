@@ -2,7 +2,7 @@ import yaml
 import os
 from paths import LOGIC_PATH, TYPE_PATH, TRICK_PATH
 from collections import OrderedDict
-from class_ms import YamlOrderedDictLoader
+from class_creator.class_ms import YamlOrderedDictLoader
 
 forbidden_keys = ["Paths","Mode","Item","Original item"]
 path_input = PLAN_PATH

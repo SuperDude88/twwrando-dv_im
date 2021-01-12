@@ -6,7 +6,7 @@ from collections import OrderedDict
 from io import BytesIO
 import glob
 from PIL import Image
-from class_ms import YamlOrderedDictLoader
+from class_creator.class_ms import YamlOrderedDictLoader
 
 from fs_helpers import data_len
 from wwlib.texture_utils import *

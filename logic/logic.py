@@ -5,7 +5,7 @@ from collections import OrderedDict
 import copy
 import xml.dom.minidom as minidom
 import glob
-from class_ms import YamlOrderedDictLoader
+from class_creator.class_ms import YamlOrderedDictLoader
 
 import os
 
