@@ -3029,6 +3029,7 @@ Wind Temple - Kill All Enemies in Tall Basement Room:
     & Can Defeat Stalfos
     & Can Defeat Wizzrobes
     & Can Defeat Morths
+    & Iron Boots
     # There's a Green Bokoblin and a Blue Bokoblin here, but you can use hookshot to make them fall off the platform to the ground - which will kill the one higher up, and for the lower one you can throw pots at it to steal its weapon.
     # Technically you could then use the weapon stolen from a Bokoblin to defeat all the other enemies here, but the issue with that is that if you kill both the Bokoblins, then exit and re-enter the room, you could no longer do this because they don't respawn. Same with the Stalfos and their maces.
   Original item: Treasure Chart 5
