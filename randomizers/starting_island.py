@@ -31,7 +31,7 @@ def randomize_starting_island(self):
     for island_index in limit_list:
       possible_starting_islands.remove(island_index)
 
-  for x in range(1,51):
+  for x in range(50):
     starting_island_room_index = self.rng.choice(possible_starting_islands)
     if not self.banned_locales[self.island_number_to_name[starting_island_room_index]]:
       break
