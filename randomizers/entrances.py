@@ -12,29 +12,34 @@ DUNGEON_ENTRANCES = [
   ZoneEntrance("Edaichi", 0, 0, 1, "Dungeon Entrance On Headstone Island", "Headstone Island", "sea", 45, 229),
   ZoneEntrance("Ekaze", 0, 0, 1, "Dungeon Entrance On Gale Isle", "Gale Isle", "sea", 4, 232),
 ]
-SECRET_CAVE_ENTRANCES = [
-  ZoneEntrance("sea", 44, 8, 10, "Secret Cave Entrance on Outset Island", "Outset Island", "sea", 44, 10),
-  ZoneEntrance("sea", 13, 2, 5, "Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island", "sea", 13, 5),
+PUZZLE_CAVE_ENTRANCES = [
   # Note: For Fire Mountain and Ice Ring Isle, the spawn ID specified is on the sea with KoRL instead of being at the cave entrance, since the player would get burnt/frozen if they were put at the entrance while the island is still active.
   ZoneEntrance("sea", 20, 0, 0, "Secret Cave Entrance on Fire Mountain", "Fire Mountain", "sea", 20, 0),
   ZoneEntrance("sea", 40, 0, 0, "Secret Cave Entrance on Ice Ring Isle", "Ice Ring Isle", "sea", 40, 0),
   ZoneEntrance("Abesso", 0, 1, 1, "Secret Cave Entrance on Private Oasis", "Private Oasis", "Abesso", 0, 1),
   ZoneEntrance("sea", 29, 0, 5, "Secret Cave Entrance on Needle Rock Isle", "Needle Rock Isle", "sea", 29, 5),
   ZoneEntrance("sea", 47, 1, 5, "Secret Cave Entrance on Angular Isles", "Angular Isles", "sea", 47, 5),
+  ZoneEntrance("sea", 35, 0, 1, "Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock", "sea", 35, 1),
+  ZoneEntrance("sea", 36, 0, 1, "Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island", "sea", 36, 1),
+  ZoneEntrance("sea", 42, 0, 2, "Secret Cave Entrance on Cliff Plateau Isles", "Cliff Plateau Isles", "sea", 42, 2)
+]
+MIXED_CAVE_ENTRANCES = [
   ZoneEntrance("sea", 48, 0, 5, "Secret Cave Entrance on Boating Course", "Boating Course", "sea", 48, 5),
+  ZoneEntrance("sea", 12, 0, 1, "Secret Cave Entrance on Pawprint Isle", "Pawprint Isle", "sea", 12, 1),
+  ZoneEntrance("sea", 34, 0, 1, "Secret Cave Entrance on Bomb Island", "Bomb Island", "sea", 34, 1)
+]
+COMBAT_CAVE_ENTRANCES = [
+  ZoneEntrance("sea", 44, 8, 10, "Secret Cave Entrance on Outset Island", "Outset Island", "sea", 44, 10),
+  ZoneEntrance("sea", 13, 2, 5, "Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island", "sea", 13, 5),
   ZoneEntrance("sea", 31, 0, 1, "Secret Cave Entrance on Stone Watcher Island", "Stone Watcher Island", "sea", 31, 1),
   ZoneEntrance("sea", 7, 0, 1, "Secret Cave Entrance on Overlook Island", "Overlook Island", "sea", 7, 1),
-  ZoneEntrance("sea", 35, 0, 1, "Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock", "sea", 35, 1),
-  ZoneEntrance("sea", 12, 0, 1, "Secret Cave Entrance on Pawprint Isle", "Pawprint Isle", "sea", 12, 1),
   ZoneEntrance("sea", 12, 1, 5, "Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle", "sea", 12, 5),
-  ZoneEntrance("sea", 36, 0, 1, "Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island", "sea", 36, 1),
-  ZoneEntrance("sea", 34, 0, 1, "Secret Cave Entrance on Bomb Island", "Bomb Island", "sea", 34, 1),
   ZoneEntrance("sea", 16, 0, 1, "Secret Cave Entrance on Rock Spire Isle", "Rock Spire Isle", "sea", 16, 1),
   ZoneEntrance("sea", 38, 0, 5, "Secret Cave Entrance on Shark Island", "Shark Island", "sea", 38, 5),
-  ZoneEntrance("sea", 42, 0, 2, "Secret Cave Entrance on Cliff Plateau Isles", "Cliff Plateau Isles", "sea", 42, 2),
   ZoneEntrance("sea", 43, 0, 5, "Secret Cave Entrance on Horseshoe Island", "Horseshoe Island", "sea", 43, 5),
-  ZoneEntrance("sea", 2, 0, 1, "Secret Cave Entrance on Star Island", "Star Island", "sea", 2, 1),
+  ZoneEntrance("sea", 2, 0, 1, "Secret Cave Entrance on Star Island", "Star Island", "sea", 2, 1)
 ]
+SECRET_CAVE_ENTRANCES = PUZZLE_CAVE_ENTRANCES + MIXED_CAVE_ENTRANCES + COMBAT_CAVE_ENTRANCES
 
 ZoneExit = namedtuple(
   "ZoneExit",
@@ -47,28 +52,33 @@ DUNGEON_EXITS = [
   ZoneExit("M_Dai", 0, 0, 0, "Earth Temple", "Earth Temple", "M_DaiB"),
   ZoneExit("kaze", 15, 0, 15, "Wind Temple", "Wind Temple", "kazeB"),
 ]
-SECRET_CAVE_EXITS = [
-  ZoneExit("Cave09", 0, 1, 0, "Outset Island", "Savage Labyrinth", None),
-  ZoneExit("TF_06", 0, 0, 0, "Dragon Roost Island", "Dragon Roost Island Secret Cave", None),
+PUZZLE_CAVE_EXITS = [
   ZoneExit("MiniKaz", 0, 0, 0, "Fire Mountain", "Fire Mountain Secret Cave", None),
   ZoneExit("MiniHyo", 0, 0, 0, "Ice Ring Isle", "Ice Ring Isle Secret Cave", None),
   ZoneExit("TF_04", 0, 0, 0, "Private Oasis", "Cabana Labyrinth", None),
   ZoneExit("SubD42", 0, 0, 0, "Needle Rock Isle", "Needle Rock Isle Secret Cave", None),
   ZoneExit("SubD43", 0, 0, 0, "Angular Isles", "Angular Isles Secret Cave", None),
+  ZoneExit("TF_03", 0, 0, 0, "Bird's Peak Rock", "Bird's Peak Rock Secret Cave", None),
+  ZoneExit("WarpD", 0, 0, 0, "Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave", None),
+  ZoneExit("Cave03", 0, 0, 0, "Cliff Plateau Isles", "Cliff Plateau Isles Secret Cave", None)
+]
+MIXED_CAVE_EXITS = [
   ZoneExit("SubD71", 0, 0, 0, "Boating Course", "Boating Course Secret Cave", None),
+  ZoneExit("TyuTyu", 0, 0, 0, "Pawprint Isle", "Pawprint Isle Chuchu Cave", None),
+  ZoneExit("Cave01", 0, 0, 0, "Bomb Island", "Bomb Island Secret Cave", None)
+]
+COMBAT_CAVE_EXITS = [
+  ZoneExit("Cave09", 0, 1, 0, "Outset Island", "Savage Labyrinth", None),
+  ZoneExit("TF_06", 0, 0, 0, "Dragon Roost Island", "Dragon Roost Island Secret Cave", None),
   ZoneExit("TF_01", 0, 0, 0, "Stone Watcher Island", "Stone Watcher Island Secret Cave", None),
   ZoneExit("TF_02", 0, 0, 0, "Overlook Island", "Overlook Island Secret Cave", None),
-  ZoneExit("TF_03", 0, 0, 0, "Bird's Peak Rock", "Bird's Peak Rock Secret Cave", None),
-  ZoneExit("TyuTyu", 0, 0, 0, "Pawprint Isle", "Pawprint Isle Chuchu Cave", None),
   ZoneExit("Cave07", 0, 0, 0, "Pawprint Isle", "Pawprint Isle Wizzrobe Cave", None),
-  ZoneExit("WarpD", 0, 0, 0, "Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave", None),
-  ZoneExit("Cave01", 0, 0, 0, "Bomb Island", "Bomb Island Secret Cave", None),
   ZoneExit("Cave04", 0, 0, 0, "Rock Spire Isle", "Rock Spire Isle Secret Cave", None),
   ZoneExit("ITest63", 0, 0, 0, "Shark Island", "Shark Island Secret Cave", None),
-  ZoneExit("Cave03", 0, 0, 0, "Cliff Plateau Isles", "Cliff Plateau Isles Secret Cave", None),
   ZoneExit("Cave05", 0, 0, 0, "Horseshoe Island", "Horseshoe Island Secret Cave", None),
-  ZoneExit("Cave02", 0, 0, 0, "Star Island", "Star Island Secret Cave", None),
+  ZoneExit("Cave02", 0, 0, 0, "Star Island", "Star Island Secret Cave", None)
 ]
+SECRET_CAVE_EXITS = PUZZLE_CAVE_EXITS + MIXED_CAVE_EXITS + COMBAT_CAVE_EXITS
 
 DUNGEON_ENTRANCE_NAMES_WITH_NO_REQUIREMENTS = [
   "Dungeon Entrance On Dragon Roost Island",
@@ -80,15 +90,18 @@ SECRET_CAVE_ENTRANCE_NAMES_WITH_NO_REQUIREMENTS = [
 
 DUNGEON_EXIT_NAMES_WITH_NO_REQUIREMENTS = [
   "Dragon Roost Cavern",
+  "Forbidden Woods",
+  "Tower of the Gods"
 ]
 PUZZLE_SECRET_CAVE_EXIT_NAMES_WITH_NO_REQUIREMENTS = [
-  "Pawprint Isle Chuchu Cave",
   "Ice Ring Isle Secret Cave",
-  "Bird's Peak Rock Secret Cave", # Technically this has requirements, but it's just Wind Waker+Wind's Requiem.
-  "Diamond Steppe Island Warp Maze Cave",
+  "Diamond Steppe Island Warp Maze Cave"
+]
+MIXED_SECRET_CAVE_EXIT_NAMES_WITH_NO_REQUIREMENTS = [
+  "Pawprint Isle Chuchu Cave"
 ]
 COMBAT_SECRET_CAVE_EXIT_NAMES_WITH_NO_REQUIREMENTS = [
-  "Rock Spire Isle Secret Cave",
+  "Rock Spire Isle Secret Cave"
 ]
 
 # TODO: Maybe make a separate list of entrances and exits that have no requirements when you start with a sword. (e.g. Cliff Plateau Isles Secret Cave.) Probably not necessary though.
@@ -122,7 +135,7 @@ def randomize_one_set_of_entrances(self, include_dungeons=False, include_caves=F
       doing_progress_entrances_for_dungeons_and_caves_only_start = True
     if include_caves and (self.options.get("progression_puzzle_secret_caves") \
         or self.options.get("progression_combat_secret_caves") \
-        or self.options.get("progression_savage_labyrinth")):
+        or self.options.get("progression_mixed_secret_caves")):
       doing_progress_entrances_for_dungeons_and_caves_only_start = True
 
   if self.options.get("race_mode"):
@@ -147,7 +160,7 @@ def randomize_one_set_of_entrances(self, include_dungeons=False, include_caves=F
       entrance_names_with_no_requirements += DUNGEON_ENTRANCE_NAMES_WITH_NO_REQUIREMENTS
     if self.options.get("progression_puzzle_secret_caves") \
         or self.options.get("progression_combat_secret_caves") \
-        or self.options.get("progression_savage_labyrinth"):
+        or self.options.get("progression_mixed_secret_caves"):
       entrance_names_with_no_requirements += SECRET_CAVE_ENTRANCE_NAMES_WITH_NO_REQUIREMENTS
 
     exit_names_with_no_requirements = []
@@ -155,6 +168,8 @@ def randomize_one_set_of_entrances(self, include_dungeons=False, include_caves=F
       exit_names_with_no_requirements += DUNGEON_EXIT_NAMES_WITH_NO_REQUIREMENTS
     if self.options.get("progression_puzzle_secret_caves"):
       exit_names_with_no_requirements += PUZZLE_SECRET_CAVE_EXIT_NAMES_WITH_NO_REQUIREMENTS
+    if self.options.get("progression_mixed_secret_caves"):
+      exit_names_with_no_requirements += MIXED_SECRET_CAVE_EXIT_NAMES_WITH_NO_REQUIREMENTS
     if self.options.get("progression_combat_secret_caves"):
       exit_names_with_no_requirements += COMBAT_SECRET_CAVE_EXIT_NAMES_WITH_NO_REQUIREMENTS
     # No need to check progression_savage_labyrinth, since neither of the items inside Savage have no requirements.
