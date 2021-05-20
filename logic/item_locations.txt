@@ -3045,6 +3045,7 @@ Wind Temple - Molgera Heart Container:
   Need:
     Can Access Wind Temple Basement
     & Hookshot
+    & Iron Boots
     & ((Can Defeat Blue Bubbles & Can Play Wind God's Aria) | Tricked Logic)
     & WT Small Key x2
     & (
