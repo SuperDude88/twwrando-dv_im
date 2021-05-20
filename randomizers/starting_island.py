@@ -35,7 +35,7 @@ def randomize_starting_island(self):
   while i<50:
     i+=1
     starting_island_room_index = self.rng.choice(possible_starting_islands)
-    if not self.banned_island_locales[starting_island_room_index-1]:
+    if not self.banned_locales[self.island_number_to_name[starting_island_room_index]]:
       break
     else:
       continue

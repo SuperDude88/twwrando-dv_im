@@ -305,7 +305,8 @@ class Randomizer:
     # If race mode is not on, this list will remain empty.
     self.race_mode_banned_locations = []
     # If player wants Race Dungeons to be shown, future proofing.
-    # Hidden         = no quest markers
+    # None           = No markers
+    # Hidden         = Show number but not which
     # Vanilla        = regular island location regardless of actual entrance
     # With Entrances = actual entrance regardless of regular island location
     self.race_mode_quest_marker_mode = "With Entrances"

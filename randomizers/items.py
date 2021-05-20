@@ -346,6 +346,8 @@ def randomize_dungeon_items(self):
     self.logic.remove_owned_item(item_name)
 
 def place_dungeon_item(self, item_name):
+  short_dungeon_name = item_name.split(" ")[0]
+  item_dungeon_name = self.logic.DUNGEON_NAMES[short_dungeon_name]
   banned_regular = self.banned_dungeon_locales[item_dungeon_name]
   if (banned_regular):
     possible_locations = []

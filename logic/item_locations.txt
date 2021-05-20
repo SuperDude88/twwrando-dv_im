@@ -2376,7 +2376,7 @@ Earth Temple - Behind Left Curtain In Warp Pot Room:
   Locale: Earth Temple, dv_im
   Paths:
     - M_Dai/Room2.arc/Actor00F
-Earth Temple - Behind Right Curtain In Warp Pot Room:
+Earth Temple - Behind Back Curtain In Warp Pot Room:
   Need:
     Can Access Earth Temple
     & Can Play Command Melody
