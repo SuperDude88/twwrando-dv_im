@@ -191,7 +191,7 @@ Outset Island - On Grandma's Roof:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor0A5
+    - sea/Room44.arc/Actor0A6
 Outset Island - Above the Water Basin:
   Need:
     ( Bait Bag | Hookshot | (Can Fly With Deku Leaf Outdoors & Can Cut or Slash) )
@@ -200,7 +200,7 @@ Outset Island - Above the Water Basin:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor0A6
+    - sea/Room44.arc/Actor0A5
 Outset Island - In the Trees near the Water Basin:
   Need:
     Can Cut Down Outset Trees
@@ -209,7 +209,7 @@ Outset Island - In the Trees near the Water Basin:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor060
+    - sea/Room44.arc/Actor05E
 Outset Island - Near Mesa's House:
   Need:
     Can Travel to Outset Island
@@ -244,7 +244,7 @@ Outset Island - First Platforming Across Rocks:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor05E
+    - sea/Room44.arc/Actor060
 Outset Island - Final Platforming Across Rocks:
   Need:
     Can Travel to Outset Island
@@ -1272,7 +1272,7 @@ Dragon Roost Cavern - Big Key Chest:
       | Ice Arrows
       | Complex Logic
     )
-    & (Grappling Hook | Deku Leaf)
+    & Grappling Hook
     & Can Stun Magtails
   # You can sneak into the gap at the bottom of the second room of DRC to get this chest early.
   # In vanilla you couldn't because of an invisible wall, but the randomizer removes the wall.
