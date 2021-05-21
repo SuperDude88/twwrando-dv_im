@@ -6,20 +6,26 @@ from collections import OrderedDict
 
 from fs_helpers import *
 import tweaks
+import time
 
 def randomize_items(self):
-
   print("Randomizing items...")
 
+  self.__time_list = list()
+  self.__time_list.append([time.perf_counter(), "Initial Time"])
   if self.options.get("race_mode")!="Default":
     randomize_boss_rewards(self)
 
+  self.__time_list.append([time.perf_counter(), "Boss Rewards"])
   if self.options.get("keymode") != "Standard":
     randomize_dungeon_items(self)
 
+  self.__time_list.append([time.perf_counter(), "Dungeon Items"])
   randomize_progression_items(self)
 
   # Place unique non-progress items.
+
+  self.__time_list.append([time.perf_counter(), "Progressive Items Done"])
   while self.logic.unplaced_nonprogress_items:
     try:
         accessible_undone_locations = self.logic.get_accessible_remaining_locations()
@@ -36,6 +42,8 @@ def randomize_items(self):
     except:
         break
 
+
+  self.__time_list.append([time.perf_counter(), "Non-Progressive"])
   accessible_undone_locations = self.logic.get_accessible_remaining_locations()
   inaccessible_locations = [loc for loc in self.logic.remaining_item_locations if loc not in accessible_undone_locations]
   if inaccessible_locations:
@@ -54,6 +62,10 @@ def randomize_items(self):
 
     item_name = self.rng.choice(possible_items)
     self.logic.set_location_to_item(location_name, item_name)
+  self.__time_list.append([time.perf_counter(), "Consumables Filled"])
+  print("Timing Done!")
+  for timeUnit in self.__time_list:
+      print(timeUnit)
 
 def randomize_boss_rewards(self):
   # Try to generate dungeon boss reward locations until a valid set of locations is found.
@@ -400,12 +412,14 @@ def randomize_progression_items(self):
   if len(accessible_undone_locations) == 0:
     raise Exception("No progress locations are accessible at the very start of the game!")
 
+  self.__time_list.append([time.perf_counter(), "Start of Progressive Placement"])
   # Place progress items.
   location_weights = {}
   current_weight = 1
+  loop_total = 0
   while self.logic.unplaced_progress_items:
+    loop_total += 1
     accessible_undone_locations = self.logic.get_accessible_remaining_locations(for_progression=True)
-
     if not accessible_undone_locations:
       raise Exception("No locations left to place progress items!")
 
@@ -414,6 +428,7 @@ def randomize_progression_items(self):
       loc for loc in accessible_undone_locations
       if loc in self.logic.prerandomization_item_locations
     ]
+
     if newly_accessible_predetermined_item_locations:
       for predetermined_item_location_name in newly_accessible_predetermined_item_locations:
         predetermined_item_name = self.logic.prerandomization_item_locations[predetermined_item_location_name]
@@ -460,6 +475,8 @@ def randomize_progression_items(self):
     if len(possible_items) == 0:
       raise Exception("No valid locations left for any of the unplaced progress items!")
 
+    self.__time_list.append([time.perf_counter(),"Unique Items Started"])
+    # This section seems to take some time.
     # Remove duplicates from the list so items like swords and bows aren't so likely to show up early.
     unique_possible_items = []
     for item_name in possible_items:
@@ -467,6 +484,8 @@ def randomize_progression_items(self):
         unique_possible_items.append(item_name)
     possible_items = unique_possible_items
 
+    self.__time_list.append([time.perf_counter(),"First Unique Item Loop Done"])
+    # Start of a slow section
     must_place_useful_item = False
     should_place_useful_item = True
     if len(accessible_undone_locations) == 1 and len(possible_items) > 1:
@@ -483,15 +502,21 @@ def randomize_progression_items(self):
     # This is so that a group doesn't wind up taking every single possible remaining location while not opening up new ones.
     possible_groups = [name for name in possible_items if name in self.logic.progress_item_groups]
     useless_groups = self.logic.get_all_useless_items(possible_groups)
+    # End of a slow section
+    self.__time_list.append([time.perf_counter(),"Post Unique Item Function Call"])
     possible_items_when_not_placing_useful = [name for name in possible_items if name not in useless_groups]
     # Only exception is when there's exclusively groups left to place. Then we allow groups even if they're not useful.
     if len(possible_items_when_not_placing_useful) == 0 and len(possible_items) > 0:
       possible_items_when_not_placing_useful = possible_items
 
     if must_place_useful_item or should_place_useful_item:
+      self.__time_list.append([time.perf_counter(),"Top of must place item"])
+      # Beginning of a slow section
       shuffled_list = possible_items.copy()
       self.rng.shuffle(shuffled_list)
       item_name = self.logic.get_first_useful_item(shuffled_list)
+      # End of the slow section
+      self.__time_list.append([time.perf_counter(),"Post functions and copying"])
       if item_name is None:
         if must_place_useful_item:
           raise Exception("No useful progress items to place!")
@@ -513,7 +538,11 @@ def randomize_progression_items(self):
 
           item_name = self.rng.choice(items_at_max_usefulness)
     else:
+      self.__time_list.append([time.perf_counter(),"Before self.rng.choice()"])
       item_name = self.rng.choice(possible_items_when_not_placing_useful)
+      self.__time_list.append([time.perf_counter(),"After self.rng.choice()"])
+
+    self.__time_list.append([time.perf_counter(),"Unique Items Finished"])
 
     if self.options.get("race_mode")=="Race" and item_name in self.logic.all_progress_items:
       test_state = True
@@ -536,6 +565,8 @@ def randomize_progression_items(self):
         else:
           raise Exception("Failed to prevent progress items from appearing in unchosen dungeons for race mode.")
 
+
+    self.__time_list.append([time.perf_counter(),"Starting Item Group Logic"])
     if item_name in self.logic.progress_item_groups:
       # If we're placing an entire item group, we use different logic for deciding the location.
       # We do not weight towards newly accessible locations.
@@ -589,6 +620,7 @@ def randomize_progression_items(self):
   if not game_beatable:
     raise Exception("Game is not beatable on this seed! This error shouldn't happen.")
 
+  print(f"Total Loop iterations{loop_total}")
 
 
 

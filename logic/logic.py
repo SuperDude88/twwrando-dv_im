@@ -6,7 +6,7 @@ import copy
 import xml.dom.minidom as minidom
 import glob
 from class_ms import YamlOrderedDictLoader
-
+import time
 import os
 
 from logic.item_types import *
@@ -393,10 +393,11 @@ class Logic:
 
     return accessible_location_names
 
+  # Slow Function
   def get_first_useful_item(self, items_to_check):
     # Searches through a given list of items and returns the first one that opens up at least 1 new location.
     # The randomizer shuffles the list before passing it to this function, so in effect it picks a random useful item.
-
+    print(f"GFUI - Initial time - {time.perf_counter()}")
     accessible_undone_locations = self.get_accessible_remaining_locations(for_progression=True)
     inaccessible_undone_item_locations = []
     locations_to_check = self.remaining_item_locations
@@ -404,6 +405,7 @@ class Logic:
     for location_name in locations_to_check:
       if location_name not in accessible_undone_locations:
         inaccessible_undone_item_locations.append(location_name)
+    print(f"GFUI - First Loop - {time.perf_counter()}")
 
     # Cache whether each item is useful in order to avoid an absurd number of duplicate recursive calls when checking if a predetermined dungeon item location has a useful item or not.
     self.cached_items_are_useful = {}
@@ -412,7 +414,7 @@ class Logic:
       if self.check_item_is_useful(item_name, inaccessible_undone_item_locations):
         self.cached_items_are_useful = None
         return item_name
-
+    print(f"GFUI - Second Loop - {time.perf_counter()}")
     self.cached_items_are_useful = None
 
     return None
@@ -470,9 +472,11 @@ class Logic:
 
     return item_by_usefulness_fraction
 
+  #Slow
   def get_all_useless_items(self, items_to_check):
     # Searches through a given list of items and returns which of them do not open up even 1 new location.
 
+    print(f"GAUI - Initial time - {time.perf_counter()}")
     if len(items_to_check) == 0:
       return []
 
@@ -484,6 +488,7 @@ class Logic:
       if location_name not in accessible_undone_locations:
         inaccessible_undone_item_locations.append(location_name)
 
+    print(f"GAUI - After First Loop - {time.perf_counter()}")
     self.cached_items_are_useful = {}
 
     useless_items = []
@@ -491,10 +496,12 @@ class Logic:
       if not self.check_item_is_useful(item_name, inaccessible_undone_item_locations):
         useless_items.append(item_name)
 
+    print(f"GAUI - After Second Loop - {time.perf_counter()}")
     self.cached_items_are_useful = None
 
     return useless_items
 
+  # Source of the slow functions?
   def check_item_is_useful(self, item_name, inaccessible_undone_item_locations):
     # Checks whether a specific item unlocks any new locations or not.
     # This function should only be called by get_first_useful_item, get_all_useless_items, or by itself for recursion purposes.
@@ -1016,6 +1023,7 @@ class Logic:
     else:
       raise Exception("Unknown requirement name: " + req_name)
 
+  # It seems like we call this more than once per item location, but it shouldn't change?
   def check_logical_expression_req(self, logical_expression):
     expression_type = None
     subexpression_results = []
