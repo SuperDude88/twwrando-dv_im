@@ -1919,7 +1919,7 @@
               <item row="7" column="4">
                <widget class="QCheckBox" name="locale_battlesquid">
                 <property name="text">
-                 <string>Battlequids</string>
+                 <string>Battlesquids</string>
                 </property>
                 <property name="checked">
                  <bool>true</bool>
