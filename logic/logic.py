@@ -11,11 +11,11 @@ class Logic:
         self.accessible = False
         self.itemList = list()
 
-    def _conToLogStruct(self, str:logicString):
+    def _con_log_struct(self, str:logicString):
         pass
 
-    def addItem(self, str:ItemName):
+    def add_item(self, str:ItemName):
         pass
 
-    def getItemList(self):
+    def get_item_list(self):
         return self.itemList

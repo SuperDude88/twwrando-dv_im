@@ -19,15 +19,15 @@ class Item:
   def __init__(self, str:Name):
     self.Name = Name
     self.Owned = False
-    self.Checks = list()
+    self.locations = list()
 
-  def get_checks(self):
-    return self.Checks
+  def get_locations(self):
+    return self.locations
 
   def add_check(self, check):
-    self.Checks.append(check)
+    self.locations.append(check)
 
   def item_set(self):
     self.Owned = True
-    for check in self.Checks:
-        check.item_received(self.Name)
+    for location in self.locations:
+        location.item_received(self.Name)

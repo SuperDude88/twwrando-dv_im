@@ -18,31 +18,30 @@ get_accessiblity() -> bool
 required_progression() -> str list
 item_received(str:item_name) -> void
 """
+from Location import Location as Location
 
-class ItemLocation:
+class ItemLocation(Location):
 
   def __init__(self, str:LocationName, str:LocationLocale, str:Path,
                str:LogicString):
-
-    self.LocationName = LocationName
     self.LocationLocale = LocationLocale
     self.Item = ""
     self.Path = Path
     self.Sphere = -1
-    #self.__LocationLogic = ItemLogic(LogicString)
+    Location.__init__(self,LocationName,LogicString)
 
   def set_check_item(self, str:item_name, int:sphere) -> void:
     self.Item = item_name
     self.Sphere = sphere
 
   def get_accessibilty(self) -> bool:
-    return self.__LocationLogic.accessible()
+    return self.logic.accessible
 
   def required_progression(self):
-    return self.__LocationLogic.get_all_items()
+    return self.logic.get_item_list()
 
   def item_received(self, str:item_name) -> void:
-    if self.get_accessibilty():
+    if self.logic.accessible:
       return
     else:
-      self.__LocationLogic.add_item(item_name)
+      self.logic.add_item(item_name)
