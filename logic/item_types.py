@@ -20,9 +20,9 @@ HARD_REQUIRED_ITEMS = [
 
   "Boat's Sail"
 ]+ \
-  ["Progressive Sword"]*4 + \
-  ["Progressive Shield"]*2 + \
-  ["Progressive Bow"]*3
+  ["Progressive Sword"] * 4 + \
+  ["Progressive Shield"] * 2 + \
+  ["Progressive Bow"] * 3
 
 SOFT_REQUIRED_ITEMS = [
   "Tingle Tuner",
@@ -153,12 +153,12 @@ FARMABLE_ITEMS = \
 
 DUNGEON_PROGRESS_ITEMS = []
 POSSIBLE_DUNGEON_PROGRESS_ITEMS = OrderedDict()
-POSSIBLE_DUNGEON_PROGRESS_ITEMS["Dragon Roost Cavern"] = ["DRC Big Key"]  *1 + ["DRC Small Key"] *4
-POSSIBLE_DUNGEON_PROGRESS_ITEMS["Forbidden Woods"]     = ["FW Big Key"]   *1 + ["FW Small Key"] *1
-POSSIBLE_DUNGEON_PROGRESS_ITEMS["Tower of the Gods"]   = ["TotG Big Key"] *1 + ["TotG Small Key"] *2
-POSSIBLE_DUNGEON_PROGRESS_ITEMS["Forsaken Fortress"]   = ["FF Big Key"]   *0 + ["FF Small Key"] *0
-POSSIBLE_DUNGEON_PROGRESS_ITEMS["Earth Temple"]        = ["ET Big Key"]   *1 + ["ET Small Key"] *3
-POSSIBLE_DUNGEON_PROGRESS_ITEMS["Wind Temple"]         = ["WT Big Key"]   *1 + ["WT Small Key"] *2
+POSSIBLE_DUNGEON_PROGRESS_ITEMS["Dragon Roost Cavern"] = ["DRC Big Key"]  * 1 + ["DRC Small Key"] * 4
+POSSIBLE_DUNGEON_PROGRESS_ITEMS["Forbidden Woods"]     = ["FW Big Key"]   * 1 + ["FW Small Key"] * 1
+POSSIBLE_DUNGEON_PROGRESS_ITEMS["Tower of the Gods"]   = ["TotG Big Key"] * 1 + ["TotG Small Key"] * 2
+POSSIBLE_DUNGEON_PROGRESS_ITEMS["Forsaken Fortress"]   = ["FF Big Key"]   * 0 + ["FF Small Key"] * 0
+POSSIBLE_DUNGEON_PROGRESS_ITEMS["Earth Temple"]        = ["ET Big Key"]   * 1 + ["ET Small Key"] * 3
+POSSIBLE_DUNGEON_PROGRESS_ITEMS["Wind Temple"]         = ["WT Big Key"]   * 1 + ["WT Small Key"] * 2
 
 POSSIBLE_DUNGEON_PROGRESS_ITEMS_LIST = []
 for dungeons in POSSIBLE_DUNGEON_PROGRESS_ITEMS:
