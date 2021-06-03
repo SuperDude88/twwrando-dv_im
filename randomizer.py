@@ -696,6 +696,7 @@ class Randomizer:
 
     with open(os.path.join(DATA_PATH, "progress_item_hints.txt"), "r") as f:
       self.progress_item_hints = yaml.safe_load(f)
+    self.progress_woth = OrderedDict() # List zones that are considered Way of the Hero
 
     with open(os.path.join(DATA_PATH, "island_name_hints.txt"), "r") as f:
       self.island_name_hints = yaml.safe_load(f)

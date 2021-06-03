@@ -44,6 +44,7 @@ a = Analysis(['wwrando.py'],
                'logic_var/*.txt',
                'seedgen/*.txt',
                'version.txt',
+               'keys/build_key.txt'
              ]),
              hiddenimports=[],
              hookspath=[],

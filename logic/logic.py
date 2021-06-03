@@ -228,6 +228,11 @@ class Logic:
     self.remaining_item_locations.remove(location_name)
     if item_name in self.all_progress_items or item_name in self.all_nonprogress_items:
       self.done_location_items[item_name].append(location_name)
+      if item_name in self.all_progress_items:
+        zone_name, _ = self.split_location_name_by_zone(location_name)
+        if zone_name not in self.rando.progress_woth:
+          self.rando.progress_woth[zone_name] = []
+        self.rando.progress_woth[zone_name].append(item_name)
 
     self.add_owned_item(item_name)
 

@@ -384,6 +384,7 @@ Can Access Hyrule:
   & Triforce Shard 6
   & Triforce Shard 7
   & Triforce Shard 8
+  & Can Travel to Tower of the Gods
 Can Get Past Hyrule Barrier:
   Can Access Hyrule
   & (
@@ -1094,6 +1095,7 @@ Can Travel to Greatfish Isle Warp:
 
 Can Travel to Forsaken Fortress:
   Can Play Ballad of Gales
+  | Can Travel to any Island
 
 Can Travel to Windfall Island:
   Can Travel to Windfall Island Warp
@@ -1105,6 +1107,7 @@ Can Travel to Windfall Island:
 
 Can Travel to Dragon Roost Island:
   Can Play Ballad of Gales
+  | Can Travel to any Island
 
 Can Travel to Tingle Island:
   Can Travel to Tingle Island Warp
@@ -1128,15 +1131,19 @@ Can Travel to Greatfish Isle:
 
 Can Travel to Tower of the Gods:
   Can Play Ballad of Gales
+  | Can Travel to any Island
 
 Can Travel to Southern Fairy Island:
   Can Play Ballad of Gales
+  | Can Travel to any Island
 
 Can Travel to Forest Haven:
   Can Play Ballad of Gales
+  | Can Travel to any Island
 
 Can Travel to Outset Island:
   Can Play Ballad of Gales
+  | Can Travel to any Island
 
 
 Can Travel to Star Island:
