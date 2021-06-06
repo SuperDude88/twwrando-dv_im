@@ -40,8 +40,9 @@ class ItemLocation(Location):
   def required_progression(self):
     return self.logic.get_item_list()
 
-  def item_received(self, str:item_name) -> void:
-    if self.logic.accessible:
+  def item_received(self, str:item_name, int:sphere) -> void:
+    self.Sphere = Sphere
+    if not self.logic.accessible:
       return
     else:
       self.logic.add_item(item_name)

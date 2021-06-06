@@ -27,7 +27,7 @@ class Item:
   def add_check(self, check):
     self.locations.append(check)
 
-  def item_set(self):
+  def item_received(self):
     self.Owned = True
     for location in self.locations:
         location.item_received(self.Name)
