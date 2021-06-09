@@ -29,6 +29,8 @@ Note that the GameCube boot up animation in Dolphin doesn't work with the random
 
 An updated package for Emotracker can be found here (https://github.com/DualVission/Wind-Waker-Item-and-Map-Tracker). This package can be seen as the 'beta' version of the main package, and is usually more up to date.  
 
+A web based tracker, based on wooferzfg's web tracker for Lago's randomizer can be found here https://tanjo3.github.io/tww-rando-tracker/ Similar to the above, this can be seen a beta tracker.
+
 ### Discord Server  
 
 If you have any questions or are looking for people to play/race with, why not join the official Wind Waker Randomizer Discord server?  
