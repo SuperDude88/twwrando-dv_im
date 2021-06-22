@@ -43,6 +43,7 @@ Outset Island - Orca - Give 10 Knight's Crests:
     Spoils Bag
     & Can Farm Knight's Crests
     & Can Sword Fight with Orca
+    & Can Travel to any Island
   Original item: Hurricane Spin
   Types: Spoils Trading
   Locale: Outset Island
@@ -191,7 +192,7 @@ Outset Island - On Grandma's Roof:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor0A5
+    - sea/Room44.arc/Actor0A6
 Outset Island - Above the Water Basin:
   Need:
     ( Bait Bag | Hookshot | (Can Fly With Deku Leaf Outdoors & Can Cut or Slash) )
@@ -200,7 +201,7 @@ Outset Island - Above the Water Basin:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor0A6
+    - sea/Room44.arc/Actor0A5
 Outset Island - In the Trees near the Water Basin:
   Need:
     Can Cut Down Outset Trees
@@ -209,7 +210,7 @@ Outset Island - In the Trees near the Water Basin:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor060
+    - sea/Room44.arc/Actor05E
 Outset Island - Near Mesa's House:
   Need:
     Can Travel to Outset Island
@@ -244,7 +245,7 @@ Outset Island - First Platforming Across Rocks:
   Types: Free Gift
   Locale: Outset Island, dv_im
   Paths:
-    - sea/Room44.arc/Actor05E
+    - sea/Room44.arc/Actor060
 Outset Island - Final Platforming Across Rocks:
   Need:
     Can Travel to Outset Island
@@ -403,7 +404,7 @@ Windfall Island - Chu Jelly Juice Shop - Give 15 Green Chu Jelly:
   Need:
     Can Farm Green Chu Jelly
     & Can Travel to Windfall Island
-    & Boat's Sail
+    & Can Sail
   Original item: Green Potion
   Types: Spoils Trading
   Locale: Windfall Island
@@ -412,7 +413,7 @@ Windfall Island - Chu Jelly Juice Shop - Give 15 Green Chu Jelly:
 Windfall Island - Chu Jelly Juice Shop - Give 15 Blue Chu Jelly:
   Need:
     Can Obtain 15 Blue Chu Jelly
-    & (Can Travel to any Island | Complex Logic)
+    & Can Travel to any Island
   Original item: Blue Potion
   Types: Spoils Trading, Long Sidequest
   Locale: Windfall Island
@@ -454,7 +455,7 @@ Windfall Island - Mrs. Marie - Give 21 Joy Pendants:
   Need:
     Spoils Bag
     & Can Farm Joy Pendants
-    & Can Travel to Windfall Island
+    & Can Travel to any Island
   Original item: Cabana Deed
   Types: Spoils Trading
   Locale: Windfall Island
@@ -464,7 +465,7 @@ Windfall Island - Mrs. Marie - Give 40 Joy Pendants:
   Need:
     Spoils Bag
     & Can Farm Joy Pendants
-    & Can Travel to Windfall Island
+    & Can Travel to any Island
   Original item: Hero's Charm
   Types: Spoils Trading
   Locale: Windfall Island
@@ -562,7 +563,8 @@ Windfall Island - House of Wealth Chest:
 Windfall Island - Maggie's Father - Give 20 Skull Necklaces:
   Need:
     Rescued Aryll
-    & Spoils Bag & Can Farm Skull Necklaces
+    & Spoils Bag
+    & Can Farm Skull Necklaces
     & Can Travel to any Island
   Original item: Treasure Chart 2
   Types: Spoils Trading
@@ -1272,7 +1274,7 @@ Dragon Roost Cavern - Big Key Chest:
       | Ice Arrows
       | Complex Logic
     )
-    & (Grappling Hook | Deku Leaf)
+    & Grappling Hook
     & Can Stun Magtails
   # You can sneak into the gap at the bottom of the second room of DRC to get this chest early.
   # In vanilla you couldn't because of an invisible wall, but the randomizer removes the wall.
