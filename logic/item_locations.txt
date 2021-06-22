@@ -2349,6 +2349,8 @@ Headstone Island - Inside Island:
 Earth Temple - Transparent Chest In Warp Pot Room:
   Need:
     Can Get into Earth Temple
+    & ( Can Play Command Melody
+    | Can Aim Mirror Shield)
   Original item: Dungeon Map
   Types: Dungeon
   Locale: Earth Temple
@@ -2369,8 +2371,7 @@ Earth Temple - Chest Behind Destructible Walls:
     - M_Dai/Stage.arc/Chest00A
 Earth Temple - Behind Left Curtain In Warp Pot Room:
   Need:
-    Can Access Earth Temple
-    & Can Play Command Melody
+    Can Get into Earth Temple
     & Fire Arrows
     & (Boomerang | Hookshot)
   Original item: Joy Pendant
