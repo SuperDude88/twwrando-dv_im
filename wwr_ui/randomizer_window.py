@@ -882,6 +882,7 @@ class WWRandomizerWindow(QMainWindow):
             self.append_row(self.starting_gear_model, item)
           for i in range(randamount):
             self.append_row(self.randomized_gear_model, item)
+        self.update_additional_spins_max()
 
     if not self.get_option_value("randomize_enemies"):
       # If a permalink with enemy rando off was pasted, we don't want to change enemy palette rando to match the permalink.
