@@ -1,6 +1,7 @@
 from collections import OrderedDict
 
 HARD_REQUIRED_ITEMS = [
+  "Telescope",
   "Wind Waker",
   "Grappling Hook",
   "Boomerang",
@@ -26,7 +27,6 @@ HARD_REQUIRED_ITEMS = [
 
 SOFT_REQUIRED_ITEMS = [
   "Tingle Tuner",
-  "Telescope",
 
   "Spoils Bag",
   "Power Bracelets",

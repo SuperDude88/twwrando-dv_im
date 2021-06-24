@@ -258,19 +258,22 @@ BGMS_HARDCODED_TO_PLAY_FOR_ISLAND = {
 BGM_RANDOMIZATION_GROUPS = [
   # Short jingles and fanfares
   [
-    "get.bms",
-    "get_h.bms",
-    "get_s.bms",
-    "get_song.bms",
-    "get_perl.bms",
+    "open_box.bms",           # Chest Open SFX
+    "get.bms",                # Salvaged Chest SFX
+    "mastersword.bms",        # Master Sword Get SFX
 
-    "open_box.bms",
-    "get_box.bms",
-    "mastersword.bms",
+    "takt_wnd.bms",           # Played Wind's Requiem
+    "takt_wrp.bms",           # Played Ballad of Gales
+    "takt_dn.bms",            # Played Song of Passing
+  ],
 
-    "takt_wnd.bms",
-    "takt_wrp.bms",
-    "takt_dn.bms",
+  # Chest Open Jingles
+  [
+    "get_box.bms",            # Item Get
+    "get_s.bms",              # Spoils Get
+    "get_h.bms",              # Heart Container Get
+    "get_song.bms",           # Song Get
+    "get_perl.bms",           # Pearl Get
   ],
 
   # Long, but non-looping sounds

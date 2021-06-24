@@ -314,7 +314,7 @@ Outset Island - Savage Labyrinth - Floor 50:
   # * Floor 45 (16x Bokoblins)
   # * Floor 47 (3x Moblins, 2x Darknuts)
   Original item: Piece of Heart
-  Types: Combat Secret Cave, Long Combat Trial
+  Types: No progression
   Locale: Outset Island, Savage Labyrinth
   Paths:
     - Cave10/Room20.arc/Chest000
@@ -904,35 +904,35 @@ Dragon Roost Island - Freestanding on Grapple Pegs:
 Dragon Roost Island - First Freestanding in The Wading Pool:
   Need: Can Travel to Dragon Roost Island
   Original item: Green Rupee
-  Types: Free Gift
+  Types: Consumables only
   Locale: Dragon Roost Island, dv_im
   Paths:
     - sea/Room13.arc/Actor05A
 Dragon Roost Island - Second Freestanding in The Wading Pool:
   Need: Can Travel to Dragon Roost Island
   Original item: Recovery Heart
-  Types: Free Gift
+  Types: Consumables only
   Locale: Dragon Roost Island, dv_im
   Paths:
     - sea/Room13.arc/Actor059
 Dragon Roost Island - Third Freestanding in The Wading Pool:
   Need: Can Travel to Dragon Roost Island
   Original item: Green Rupee
-  Types: Free Gift
+  Types: Consumables only
   Locale: Dragon Roost Island, dv_im
   Paths:
     - sea/Room13.arc/Actor057
 Dragon Roost Island - Fourth Freestanding in The Wading Pool:
   Need: Can Travel to Dragon Roost Island
   Original item: Green Rupee
-  Types: Free Gift
+  Types: Consumables only
   Locale: Dragon Roost Island, dv_im
   Paths:
     - sea/Room13.arc/Actor05B
 Dragon Roost Island - Fifth Freestanding in The Wading Pool:
   Need: Can Travel to Dragon Roost Island
   Original item: Green Rupee
-  Types: Free Gift
+  Types: Consumables only
   Locale: Dragon Roost Island, dv_im
   Paths:
     - sea/Room13.arc/Actor05C
@@ -1500,7 +1500,7 @@ Forbidden Woods - Freestanding Center in Hub Room:
     & Deku Leaf
     & Tingle Tuner Bombs
   Original item: Purple Rupee
-  Types: Dungeon, Tingle Chest
+  Types: Consumables only
   Locale: Forbidden Woods, dv_im
   Paths:
     - kindan/Room5.arc/Actor06A
@@ -1510,7 +1510,7 @@ Forbidden Woods - Freestanding Southeast in Hub Room:
     & Deku Leaf
     & Tingle Tuner Bombs
   Original item: Purple Rupee
-  Types: Dungeon, Tingle Chest
+  Types: Consumables only
   Locale: Forbidden Woods, dv_im
   Paths:
     - kindan/Room5.arc/Actor06B
@@ -1520,7 +1520,7 @@ Forbidden Woods - Freestanding Southwest in Hub Room:
     & Deku Leaf
     & Tingle Tuner Bombs
   Original item: Purple Rupee
-  Types: Dungeon, Tingle Chest
+  Types: Consumables only
   Locale: Forbidden Woods, dv_im
   Paths:
     - kindan/Room5.arc/Actor06C
@@ -1530,7 +1530,7 @@ Forbidden Woods - Freestanding Northwest in Hub Room:
     & Deku Leaf
     & Tingle Tuner Bombs
   Original item: Purple Rupee
-  Types: Dungeon, Tingle Chest
+  Types: Consumables only
   Locale: Forbidden Woods, dv_im
   Paths:
     - kindan/Room5.arc/Actor06D
@@ -1540,7 +1540,7 @@ Forbidden Woods - Freestanding Northeast in Hub Room:
     & Deku Leaf
     & Tingle Tuner Bombs
   Original item: Purple Rupee
-  Types: Dungeon, Tingle Chest
+  Types: Consumables only
   Locale: Forbidden Woods, dv_im
   Paths:
     - kindan/Room5.arc/Actor06E
@@ -3277,7 +3277,7 @@ The Great Sea - Withered Trees:
     & Can Access Other Location "Cliff Plateau Isles - Highest Isle"
     & Can Travel to any Island
   Original item: Piece of Heart
-  Types: Long Sidequest
+  Types: Short Sidequest
   Locale: Great Sea
   Paths:
     - rels/d_a_obj_ftree.rel@0237
@@ -3543,7 +3543,7 @@ Overlook Island - Cave:
     # The chuchus, keese, morths, and kargarocs don't necessarily have to be fought, but may be summoned by the wizzrobes.
     # One of the rooms has Green Bokoblins but you can trick them into attacking each other to steal a weapon.
   Original item: Triforce Chart 8
-  Types: Combat Secret Cave, Long Combat Trial
+  Types: No progression
   Locale: Overlook Island
   Paths:
     - TF_02/Stage.arc/Chest000
@@ -3621,7 +3621,7 @@ Pawprint Isle - Wizzrobe Cave:
     )
     # For the last wave, you can get the Moblin to attack the Bokoblin, take the Bokoblin's stick, and use that to kill the Moblin, Bokoblin, Morths, Keese, Kargarocs, and Peahats with armor removed. (You can also use the stick to steal the Moblin's spear and use that.)
   Original item: Silver Rupee
-  Types: Combat Secret Cave
+  Types: No progression
   Locale: Pawprint Isle
   Paths:
     - Cave07/Stage.arc/Chest000
@@ -4005,7 +4005,7 @@ Shark Island - Cave:
     # You need to kill a ton of enemies inside the cave, but no ranged weapons are required.
     # You need to have at least enough to defeat a couple Miniblins. After that some Green Bokoblins spawn, and you can get them to attack each other and drop a machete, then use that to kill the rest of the enemies in the cave.
   Original item: Silver Rupee
-  Types: Combat Secret Cave, Long Combat Trial
+  Types: No progression
   Locale: Shark Island
   Paths:
     - ITest63/Stage.arc/Chest000
