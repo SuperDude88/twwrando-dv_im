@@ -4915,7 +4915,7 @@ TF_04:
 
 
 # TODO
-# Dragon Roost Island Secret Cave
+# Dragon Roost Island Mysterious Cave
 TF_06:
 -
   Must defeat enemies: Yes

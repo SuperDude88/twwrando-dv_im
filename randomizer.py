@@ -183,33 +183,34 @@ class Randomizer:
 
     # Default entrances connections to be used if the entrance randomizer is not on.
     self.entrance_connections = OrderedDict([
-      ("Dungeon Entrance On Dragon Roost Island", "Dragon Roost Cavern"),
-      ("Dungeon Entrance In Forest Haven Sector", "Forbidden Woods"),
-      ("Dungeon Entrance In Tower of the Gods Sector", "Tower of the Gods"),
-      ("Dungeon Entrance On Headstone Island", "Earth Temple"),
-      ("Dungeon Entrance On Gale Isle", "Wind Temple"),
+      ("Path to Valoo on Dragon Roost Island", "Dragon Roost Cavern"),
+      ("Tree Corpse near Forest Haven", "Forbidden Woods"),
+      ("Foyer to Tower of the Gods", "Tower of the Gods"),
+      ("Shrine to Laruto on Headstone Island", "Earth Temple"),
+      ("Shrine to Fado on Gale Isle", "Wind Temple"),
 
-      ("Secret Cave Entrance on Outset Island", "Savage Labyrinth"),
-      ("Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island Secret Cave"),
-      ("Secret Cave Entrance on Fire Mountain", "Fire Mountain Secret Cave"),
-      ("Secret Cave Entrance on Ice Ring Isle", "Ice Ring Isle Secret Cave"),
-      ("Secret Cave Entrance on Private Oasis", "Cabana Labyrinth"),
-      ("Secret Cave Entrance on Needle Rock Isle", "Needle Rock Isle Secret Cave"),
-      ("Secret Cave Entrance on Angular Isles", "Angular Isles Secret Cave"),
-      ("Secret Cave Entrance on Boating Course", "Boating Course Secret Cave"),
-      ("Secret Cave Entrance on Stone Watcher Island", "Stone Watcher Island Secret Cave"),
-      ("Secret Cave Entrance on Overlook Island", "Overlook Island Secret Cave"),
-      ("Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock Secret Cave"),
-      ("Secret Cave Entrance on Pawprint Isle", "Pawprint Isle Chuchu Cave"),
-      ("Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle Wizzrobe Cave"),
-      ("Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave"),
-      ("Secret Cave Entrance on Bomb Island", "Bomb Island Secret Cave"),
-      ("Secret Cave Entrance on Rock Spire Isle", "Rock Spire Isle Secret Cave"),
-      ("Secret Cave Entrance on Shark Island", "Shark Island Secret Cave"),
-      ("Secret Cave Entrance on Cliff Plateau Isles", "Cliff Plateau Isles Secret Cave"),
-      ("Secret Cave Entrance on Horseshoe Island", "Horseshoe Island Secret Cave"),
-      ("Secret Cave Entrance on Star Island", "Star Island Secret Cave"),
+      ("Covered Opening on Outset Island", "Savage Labyrinth"),
+      ("Buried Pit on Dragon Roost Island", "Dragon Roost Island Mysterious Cave"),
+      ("Crater on Fire Mountain", "Fire Mountain Secret Cave"),
+      ("Palsa on Ice Ring Isle", "Ice Ring Isle Secret Cave"),
+      ("Hearth on Private Oasis", "Cabana Labyrinth"),
+      ("Frozen-Over Pit on Needle Rock Isle", "Needle Rock Isle Torches Cave"),
+      ("Hole in Angular Isles", "Angular Isles Light Puzzle Cave"),
+      ("Firth on Boating Course", "Boating Course Diamond Switches Cave"),
+      ("Sheltered Hole on Stone Watcher Island", "Stone Watcher Island Combat Trial"),
+      ("Geo on Overlook Island", "Overlook Island Combat Trial"),
+      ("Drop Behind Bars on Bird's Peak Rock", "Bird's Peak Rock Secret Cave"),
+      ("Cave Opening in Shell on Pawprint Isle", "Pawprint Isle Chuchu Cave"),
+      ("Side Isle Inlet on Pawprint Isle", "Pawprint Isle Wizzrobe Cave"),
+      ("Geo on Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave"),
+      ("Crater on Bomb Island", "Bomb Island Magtail Cave"),
+      ("Drop on Rock Spire Isle", "Rock Spire Isle Keese Cave"),
+      ("Protected Entry on Shark Island", "Shark Island Enemy Hell Cave"),
+      ("Inlet on Cliff Plateau Isles", "Cliff Plateau Isles Floating Plants Cave"),
+      ("Firth on Horseshoe Island", "Horseshoe Island Mothula Cave"),
+      ("Cave Opening on Star Island", "Star Island Combat Cave"),
     ])
+
     self.dungeon_and_cave_island_locations = OrderedDict([
       ("Dragon Roost Cavern", "Dragon Roost Island"),
       ("Forbidden Woods", "Forest Haven"),
@@ -217,26 +218,26 @@ class Randomizer:
       ("Earth Temple", "Headstone Island"),
       ("Wind Temple", "Gale Isle"),
 
-      ("Secret Cave Entrance on Outset Island", "Outset Island"),
-      ("Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island"),
-      ("Secret Cave Entrance on Fire Mountain", "Fire Mountain"),
-      ("Secret Cave Entrance on Ice Ring Isle", "Ice Ring Isle"),
-      ("Secret Cave Entrance on Private Oasis", "Private Oasis"),
-      ("Secret Cave Entrance on Needle Rock Isle", "Needle Rock Isle"),
-      ("Secret Cave Entrance on Angular Isles", "Angular Isles"),
-      ("Secret Cave Entrance on Boating Course", "Boating Course"),
-      ("Secret Cave Entrance on Stone Watcher Island", "Stone Watcher Island"),
-      ("Secret Cave Entrance on Overlook Island", "Overlook Island"),
-      ("Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock"),
-      ("Secret Cave Entrance on Pawprint Isle", "Pawprint Isle"),
-      ("Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle"),
-      ("Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island"),
-      ("Secret Cave Entrance on Bomb Island", "Bomb Island"),
-      ("Secret Cave Entrance on Rock Spire Isle", "Rock Spire Isle"),
-      ("Secret Cave Entrance on Shark Island", "Shark Island"),
-      ("Secret Cave Entrance on Cliff Plateau Isles", "Cliff Plateau Isles"),
-      ("Secret Cave Entrance on Horseshoe Island", "Horseshoe Island"),
-      ("Secret Cave Entrance on Star Island", "Star Island"),
+      ("Covered Opening on Outset Island", "Outset Island"),
+      ("Buried Pit on Dragon Roost Island", "Dragon Roost Island"),
+      ("Crater on Fire Mountain", "Fire Mountain"),
+      ("Palsa on Ice Ring Isle", "Ice Ring Isle"),
+      ("Hearth on Private Oasis", "Private Oasis"),
+      ("Frozen-Over Pit on Needle Rock Isle", "Needle Rock Isle"),
+      ("Hole in Angular Isles", "Angular Isles"),
+      ("Firth on Boating Course", "Boating Course"),
+      ("Sheltered Hole on Stone Watcher Island", "Stone Watcher Island"),
+      ("Geo on Overlook Island", "Overlook Island"),
+      ("Drop Behind Bars on Bird's Peak Rock", "Bird's Peak Rock"),
+      ("Cave Opening in Shell on Pawprint Isle", "Pawprint Isle"),
+      ("Side Isle Inlet on Pawprint Isle", "Pawprint Isle"),
+      ("Geo on Diamond Steppe Island", "Diamond Steppe Island"),
+      ("Crater on Bomb Island", "Bomb Island"),
+      ("Drop on Rock Spire Isle", "Rock Spire Isle"),
+      ("Protected Entry on Shark Island", "Shark Island"),
+      ("Inlet on Cliff Plateau Isles", "Cliff Plateau Isles"),
+      ("Firth on Horseshoe Island", "Horseshoe Island"),
+      ("Cave Opening on Star Island", "Star Island"),
     ])
 
     # Default starting island (Outset) if the starting island randomizer is not on.
@@ -490,9 +491,8 @@ class Randomizer:
     yield("Saving randomized ISO...", options_completed)
     if not self.dry_run:
       generator = self.save_randomized_iso()
-      while True:
+      for next_progress_text, files_done in generator:
         # Need to use a while loop to go through the generator instead of a for loop, as a for loop would silently exit if a StopIteration error ever happened for any reason.
-        next_progress_text, files_done = next(generator)
         if files_done == -1:
           break
         percentage_done = files_done/len(self.gcm.files_by_path)
@@ -903,9 +903,8 @@ class Randomizer:
       output_file_path = os.path.join(self.randomized_output_folder, "WW Random %s.iso" % self.seed)
       generator = self.gcm.export_disc_to_iso_with_changed_files(output_file_path)
 
-    while True:
+    for next_progress_text, files_done in generator:
       # Need to use a while loop to go through the generator instead of a for loop, as a for loop would silently exit if a StopIteration error ever happened for any reason.
-      next_progress_text, files_done = next(generator)
       if files_done == -1:
         break
       yield(next_progress_text, files_done)

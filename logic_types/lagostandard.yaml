@@ -462,7 +462,7 @@ Dragon Roost Island - Rito Aerie - Baito:
 
 Dragon Roost Island - Secret Cave:
   Need:
-    Can Access Dragon Roost Island Secret Cave
+    Can Access Dragon Roost Island Mysterious Cave
     & Can Defeat Keese
     & Can Defeat Red ChuChus
   # 4 Keese and 3 pots - it doesn't seem possible to kill all 4 without having 4 pots.
@@ -1650,7 +1650,7 @@ Needle Rock Isle - Chest:
 
 Needle Rock Isle - Cave:
   Need:
-    Can Access Needle Rock Isle Secret Cave
+    Can Access Needle Rock Isle Torches Cave
     & Fire Arrows
   Mode: o
   Types: Puzzle Secret Cave
@@ -1673,7 +1673,7 @@ Angular Isles - Cave:
   Need:
     # Mirror Shield is to shine light on the chest and make it not be transparent.
     # Either Deku Leaf or Hookshot are needed to reach the chest in the cave.
-    Can Access Angular Isles Secret Cave
+    Can Access Angular Isles Light Puzzle Cave
     & Can Aim Mirror Shield
     & (Deku Leaf | Hookshot)
   Mode: o
@@ -1686,7 +1686,7 @@ Boating Course - Raft:
 
 Boating Course - Cave:
   Need:
-    Can Access Boating Course Secret Cave
+    Can Access Boating Course Diamond Switches Cave
     & Can Hit Diamond Switches at Range
     & Can Defeat Miniblins Easily
     # Hitting the 3 diamond switches inside the cave needs a ranged weapon.
@@ -1696,7 +1696,7 @@ Boating Course - Cave:
 
 Stone Watcher Island - Cave:
   Need:
-    Can Access Stone Watcher Island Secret Cave
+    Can Access Stone Watcher Island Combat Trial
     & Can Defeat Armos
     & Can Defeat Wizzrobes
     & Can Defeat Darknuts
@@ -1735,7 +1735,7 @@ Islet of Steel - Lookout Platform - Defeat the Enemies:
 
 Overlook Island - Cave:
   Need:
-    Can Access Overlook Island Secret Cave
+    Can Access Overlook Island Combat Trial
     & Can Defeat Stalfos
     & Can Defeat Wizzrobes
     & Can Defeat Red ChuChus
@@ -1981,7 +1981,7 @@ Diamond Steppe Island - Big Octo:
 
 Bomb Island - Cave:
   Need:
-    Can Access Bomb Island Secret Cave
+    Can Access Bomb Island Magtail Cave
     & Can Stun Magtails
   Mode: o
   Types: Puzzle Secret Cave
@@ -1999,7 +1999,7 @@ Bomb Island - Submarine:
   Types: Submarine
 
 Rock Spire Isle - Cave:
-  Need: Can Access Rock Spire Isle Secret Cave
+  Need: Can Access Rock Spire Isle Keese Cave
     # The Keese in the cave can be killed with nothing but the stick in there.
   Mode: o
   Types: Mixed Secret Cave
@@ -2066,7 +2066,7 @@ Rock Spire Isle - Southeast Gunboat:
 
 Shark Island - Cave:
   Need:
-    Can Access Shark Island Secret Cave
+    Can Access Shark Island Enemy Hell Cave
     & Can Defeat Miniblins
     & Can Cut or Slash
     & Convenient Bottle
@@ -2077,7 +2077,7 @@ Shark Island - Cave:
 
 Cliff Plateau Isles - Cave:
   Need:
-    Can Access Cliff Plateau Isles Secret Cave
+    Can Access Cliff Plateau Isles Floating Plants Cave
     & Can Defeat Boko Babas
     # Technically you can kill the Boko Babas here by throwing a nut at one to stun it, then using the Grappling Hook to finish it off. But the timing is pretty precise and this is pretty obscure, so it's not in the logic.
   Mode: o
@@ -2085,7 +2085,7 @@ Cliff Plateau Isles - Cave:
 
 Cliff Plateau Isles - Highest Isle:
   Need:
-    Can Access Cliff Plateau Isles Secret Cave
+    Can Access Cliff Plateau Isles Floating Plants Cave
     & Can Defeat Boko Babas
     & Deku Leaf
   Mode: o
@@ -2118,7 +2118,7 @@ Horseshoe Island - Play Golf:
 
 Horseshoe Island - Cave:
   Need:
-    Can Access Horseshoe Island Secret Cave
+    Can Access Horseshoe Island Mothula Cave
     & Can Defeat Mothulas
     & Can Defeat Winged Mothulas
   Mode: o
@@ -2160,7 +2160,7 @@ Flight Control Platform - Submarine:
 
 Star Island - Cave:
   Need:
-    Can Access Star Island Secret Cave
+    Can Access Star Island Combat Cave
     & Can Defeat Magtails
     # After the Magtails, the second wave are Blue Bokoblins, so you can trick them into attacking each other, steal a stick, and use that to kill the remaining enemies: Green Bokoblins and Moblins.
   Mode: o

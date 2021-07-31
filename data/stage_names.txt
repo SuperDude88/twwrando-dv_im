@@ -291,7 +291,7 @@ TF_04
 TF_05
   Unused
 TF_06
-  Dragon Roost Island Secret Cave
+  Dragon Roost Island Mysterious Cave
 TF_07
   Unused
 tincle

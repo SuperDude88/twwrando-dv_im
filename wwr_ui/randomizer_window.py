@@ -529,8 +529,7 @@ class WWRandomizerWindow(QMainWindow):
         try:
           rando = Randomizer(temp_seed, clean_iso_path, output_folder, options, permalink=permalink, cmd_line_args=self.cmd_line_args)
           randomizer_generator = rando.randomize()
-          while True:
-            next_option_description, options_finished = next(randomizer_generator)
+          for next_option_description, options_finished in randomizer_generator:
             if options_finished == -1:
               break
         except Exception as e:
@@ -1822,9 +1821,8 @@ class RandomizerThread(QThread):
     try:
       randomizer_generator = self.randomizer.randomize()
       last_update_time = time.time()
-      for items in randomizer_generator:
+      for next_option_description, options_finished in randomizer_generator:
         # This comment lied so now it is gone!
-        next_option_description, options_finished = next(randomizer_generator)
         if options_finished == -1:
           break
         if time.time()-last_update_time < 0.1:
@@ -1834,6 +1832,9 @@ class RandomizerThread(QThread):
         self.update_progress.emit(next_option_description, options_finished)
         last_update_time = time.time()
     except StopIteration:
+      pass
+    except RuntimeError as e:
+      print(e, traceback.format_exc())
       pass
     except Exception as e:
       stack_trace = traceback.format_exc()

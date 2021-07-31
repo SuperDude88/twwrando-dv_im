@@ -90,7 +90,7 @@ Tingle Tuner Bombs:
   Bombs
   # Note: If an option to require Tingle Tuner is added, this macro should have Bombs replaced with Tingle Tuner when that option is on.
 
-Can Access Dungeon Entrance On Dragon Roost Island:
+Can Access Path to Valoo on Dragon Roost Island:
   Can Travel to Dragon Roost Island
 Can Access Forest Haven:
   (
@@ -100,7 +100,7 @@ Can Access Forest Haven:
   )
   & Can Travel to Forest Haven
   # Grappling over the waterfall is very difficult without killing the Boko Baba there - but only if you start grappling from the top. You can grapple from the bottom up to avoid that Boko Baba entirely, so there's no extra requirement here for swordless.
-Can Access Dungeon Entrance In Forest Haven Sector:
+Can Access Tree Corpse near Forest Haven:
   (
     Can Access Forest Haven
     & (Grappling Hook | (Tricked Logic & Wind Waker))
@@ -111,17 +111,17 @@ Can Access Dungeon Entrance In Forest Haven Sector:
   | (Complex Logic & Wind Waker)
   # You either need double magic or the ability to refill your magic by cutting grass to make it all the way across.
   # Note: You don't need Grappling Hook because you can take the lower platform exit out of Forest Haven (Noob Skip), but this is not currently in the logic.
-Can Access Dungeon Entrance In Tower of the Gods Sector:
+Can Access Foyer to Tower of the Gods:
   Din's Pearl
   & Farore's Pearl
   & Nayru's Pearl
   & Can Travel to Tower of the Gods
-Can Access Dungeon Entrance On Headstone Island:
+Can Access Shrine to Laruto on Headstone Island:
   (
     Power Bracelets
     | (Complex Logic & Wind Waker)
   ) & Can Travel to Headstone Island
-Can Access Dungeon Entrance On Gale Isle:
+Can Access Shrine to Fado on Gale Isle:
   (Skull Hammer | (Complex Logic & Wind Waker))
   & (Iron Boots | (Glitched Logic & Wind Waker))
   & Can Travel to Gale Isle
@@ -129,9 +129,9 @@ Can Access Dungeon Entrance On Gale Isle:
 # The below macros are used when dungeon entrances are not randomized.
 # When dungeon entrances are randomized, these macros are shuffled around by the randomizer logic.
 Can Access Dragon Roost Cavern:
-  Can Access Dungeon Entrance On Dragon Roost Island
+  Can Access Path to Valoo on Dragon Roost Island
 Can Access Forbidden Woods:
-  Can Access Dungeon Entrance In Forest Haven Sector
+  Can Access Tree Corpse near Forest Haven
 Can Access Forbidden Woods Basement:
   Can Access Forbidden Woods
   & Deku Leaf
@@ -142,9 +142,9 @@ Can Access Forbidden Woods Basement:
     | Boomerang
   )
 Can Access Tower of the Gods:
-  Can Access Dungeon Entrance In Tower of the Gods Sector
+  Can Access Foyer to Tower of the Gods
 Can Access Earth Temple:
-  Can Access Dungeon Entrance On Headstone Island
+  Can Access Shrine to Laruto on Headstone Island
 Can Get into Earth Temple:
   Can Access Earth Temple
   & (
@@ -161,7 +161,7 @@ Can Access Earth Temple Basement:
       | (ET Small Key x2 & Can Aim Mirror Shield & Complex Logic)
    )
 Can Access Wind Temple:
-  Can Access Dungeon Entrance On Gale Isle
+  Can Access Shrine to Fado on Gale Isle
 # Deku Leaf & Iron Boots is vanilla. Don't need it in the glitched logic options. Redundant
 Can Access Wind Temple Basement:
  Can Access Wind Temple
@@ -172,79 +172,79 @@ Can Access Wind Temple Basement:
    | (Can Spring Storage & (Fire Arrows | Bombs | Can Jumpslash))
  )
 
-Can Get into Secret Cave Entrance on Outset Island:
+Can Get into Covered Opening on Outset Island:
   ((Can Cut Down Outset Trees | Tricked Logic) & Can Fly With Deku Leaf Outdoors & Power Bracelets)
   | (Hookshot & Power Bracelets)
   | (Complex Logic & Wind Waker)
-Can Access Secret Cave Entrance on Outset Island:
-  Can Get into Secret Cave Entrance on Outset Island
+Can Access Covered Opening on Outset Island:
+  Can Get into Covered Opening on Outset Island
   & Can Travel to Outset Island
-Can Access Secret Cave Entrance on Dragon Roost Island:
+Can Access Buried Pit on Dragon Roost Island:
   (
     Bombs
     | Power Bracelets
     | Glitched Logic
   ) & Can Travel to Dragon Roost Island
-Can Access Secret Cave Entrance on Fire Mountain:
+Can Access Crater on Fire Mountain:
   Progressive Bow x2
   & Can Travel to Fire Mountain
   & Can Sail
-Can Access Secret Cave Entrance on Ice Ring Isle:
+Can Access Palsa on Ice Ring Isle:
   Progressive Bow x2
   & Can Travel to Ice Ring Isle
   & Can Sail
-Can Get into Secret Cave Entrance on Private Oasis:
+Can Get into Hearth on Private Oasis:
   (Cabana Deed & Delivery Bag & Grappling Hook)
   | (Glitched Logic & Wind Waker & Grappling Hook & (Can Fly With Deku Leaf Outdoors | Hookshot))
   | (Complex Logic & Wind Waker & Grappling Hook)
-Can Access Secret Cave Entrance on Private Oasis:
-  Can Get into Secret Cave Entrance on Private Oasis
+Can Access Hearth on Private Oasis:
+  Can Get into Hearth on Private Oasis
   & Can Travel to Private Oasis
-Can Access Secret Cave Entrance on Needle Rock Isle:
+Can Access Frozen-Over Pit on Needle Rock Isle:
   (
   Progressive Bow x2
   | (Wind Waker & Glitched Logic)
   ) & Can Travel to Needle Rock Isle
-Can Access Secret Cave Entrance on Angular Isles:
+Can Access Hole in Angular Isles:
   # Either Deku Leaf or Hookshot are needed to get into the cave.
   (
     Can Fly With Deku Leaf Outdoors
     | Hookshot
     | (Complex Logic & Wind Waker)
   ) & Can Travel to Angular Isles
-Can Get into Secret Cave Entrance on Boating Course:
+Can Get into Firth on Boating Course:
   # Getting inside the cave requires flying with Deku Leaf or Hookshotting the pole.
   Can Fly With Deku Leaf Outdoors
   | Hookshot
   | (Complex Logic & Wind Waker & Can Cut or Slash)
-Can Access Secret Cave Entrance on Boating Course:
-  Can Get into Secret Cave Entrance on Boating Course
+Can Access Firth on Boating Course:
+  Can Get into Firth on Boating Course
   & Can Travel to Boating Course
-Can Get into Secret Cave Entrance on Stone Watcher Island:
+Can Get into Sheltered Hole on Stone Watcher Island:
   Power Bracelets | (Complex Logic & Wind Waker & Can Cut or Slash)
-Can Access Secret Cave Entrance on Stone Watcher Island:
-  Can Get into Secret Cave Entrance on Stone Watcher Island
+Can Access Sheltered Hole on Stone Watcher Island:
+  Can Get into Sheltered Hole on Stone Watcher Island
   & Can Travel to Stone Watcher Island
-Can Access Secret Cave Entrance on Overlook Island:
+Can Access Geo on Overlook Island:
   (
     Hookshot
     | (Complex Logic & Wind Waker)
   ) & Can Travel to Overlook Island
-Can Access Secret Cave Entrance on Bird's Peak Rock:
+Can Access Drop Behind Bars on Bird's Peak Rock:
   # Need to hit the switches with a seagull.
   (
     Bait Bag
     | (Tricked Logic & Grappling Hook)
     | (Complex Logic & Wind Waker)
   ) & Can Travel to Bird's Peak Rock
-Can Access Secret Cave Entrance on Pawprint Isle:
+Can Access Cave Opening in Shell on Pawprint Isle:
   Can Travel to Pawprint Isle
-Can Access Secret Cave Entrance on Pawprint Isle Side Isle:
+Can Access Side Isle Inlet on Pawprint Isle:
   (
     Hookshot
     | (Glitched Logic & Deku Leaf & Bombs)
   ) & Can Travel to Pawprint Isle
-Can Access Secret Cave Entrance on Diamond Steppe Island:
+Can Access Geo on Diamond Steppe Island:
   (
     Hookshot
     | (
@@ -255,19 +255,19 @@ Can Access Secret Cave Entrance on Diamond Steppe Island:
       & Not "Can Access Other Location "Diamond Steppe Island - Big Octo""
     )
   ) & Can Travel to Diamond Steppe Island
-Can Access Secret Cave Entrance on Bomb Island:
+Can Access Crater on Bomb Island:
   (
     Bombs
     | Power Bracelets
     | (Complex Logic & Wind Waker)
   ) & Can Travel to Bomb Island
-Can Access Secret Cave Entrance on Rock Spire Isle:
+Can Access Drop on Rock Spire Isle:
   (
     Bombs
     | (Glitched Logic & Can Fly With Deku Leaf Outdoors)
     | (Complex Logic & Wind Waker & Can Cut or Slash)
   ) & Can Travel to Rock Spire Isle
-Can Access Secret Cave Entrance on Shark Island:
+Can Access Protected Entry on Shark Island:
   # Iron Boots and Skull Hammer are necessary to hit the two big buttons.
   # The diamond switch does not require Boomerang or any ranged weapon - you can just hit it with your sword or hammer.
   # Early with Chest Storage is not in Lunatic due to the policy against Chest Storage only Strats
@@ -282,63 +282,162 @@ Can Access Secret Cave Entrance on Shark Island:
     )
   )
   & Can Travel to Shark Island
-Can Access Secret Cave Entrance on Cliff Plateau Isles:
+Can Access Inlet on Cliff Plateau Isles:
   Can Travel to Cliff Plateau Isles
-Can Access Secret Cave Entrance on Horseshoe Island:
+Can Access Firth on Horseshoe Island:
   # Need Deku Leaf to play golf.
   (
     Deku Leaf
     | Complex Logic
   ) & Can Travel to Horseshoe Island
-Can Access Secret Cave Entrance on Star Island:
+Can Access Cave Opening on Star Island:
   #Note, the loading zone doesn't seem to trigger unless the rock breaks. As such DO NOT CHANGE THIS MACRO CRAIN
   (
     Bombs
     | Power Bracelets
   ) & Can Travel to Star Island
 
+Can Access Five-Star Sub Hatch:
+  (Can Travel to Five-Star Isles & Can Sail)
+  | Can Travel to any Island
+Can Access Bomb Island Sub Hatch:
+  (Can Travel to Bomb Island & Can Sail)
+  | Can Travel to any Island
+Can Access Crescent Moon Sub Hatch:
+  (Can Travel to Crescent Moon Island & Can Sail)
+  | Can Travel to any Island
+Can Access Northern Fairy Sub Hatch:
+  (Can Travel to Northern Fairy Island & Can Sail)
+  | Can Travel to any Island
+Can Access Headstone Sub Hatch:
+  (Can Travel to Headstone Island & Can Sail)
+  | Can Travel to any Island
+Can Access Birdman Sub Hatch:
+  (Can Travel to Flight Control Platform & Can Sail)
+  | Can Travel to any Island
+Can Access Six-Eye Sub Hatch:
+  (Can Travel to Six-Eye Reef & Can Sail)
+  | Can Travel to any Island
+
+Can Access Northern Fairy Conch:
+  Can Travel to Northern Fairy Island
+Can Access Eastern Fairy Conch:
+  (
+    Can Move Boulders
+    | (Complex Logic & Can Door Cancel)
+  )
+  & Can Travel to Eastern Fairy Island
+Can Access Western Fairy Conch:
+  (Skull Hammer | (Complex Logic & Can Door Cancel))
+  & Can Travel to Western Fairy Island
+Can Access Hole in the Forest of Fairies:
+  (
+    (Can Cut Down Outset Trees | Tricked Logic)
+    & Can Fly With Deku Leaf Outdoors
+    & (Can Move Boulders | Complex Logic)
+    & Can Travel to Outset Island
+  ) | (
+    Complex Logic
+    & Can Move Boulders
+    & Bait Bag
+    & Hero's Bow
+  ) | (
+    Can Move Boulders
+    & Can Door Cancel
+    & Can Play Fish Minigame
+    & Complex Logic
+  )
+Can Access Thorned Fairy Conch:
+  (
+    Skull Hammer
+    | (Complex Logic & Can Door Cancel)
+  )
+  & Can Travel to Thorned Fairy Island
+Can Access Southern Fairy Conch:
+  # Can either blow up or burn the blockade
+  (
+    Bombs
+    | Fire Arrows
+    | (Complex Logic & Can Door Cancel)
+    | (
+      Wind Waker
+      & Can Sail
+      & Tricked Logic
+    )
+  )
+  & Can Travel to Southern Fairy Island
+
+Can Access Northern Fairy Fountain:
+  Can Access Northern Fairy Conch
+Can Access Eastern Fairy Fountain:
+  Can Access Eastern Fairy Conch
+Can Access Western Fairy Fountain:
+  Can Access Western Fairy Conch
+Can Access Forest of Fairies Fountain:
+  Can Access Hole in the Forest of Fairies
+Can Access Thorned Fairy Fountain:
+  Can Access Thorned Fairy Conch
+Can Access Southern Fairy Fountain:
+  Can Access Southern Fairy Conch
+
+
 # The below macros are used when secret cave entrances are not randomized.
 # When secret cave entrances are randomized, these macros are shuffled around by the randomizer logic.
 Can Access Savage Labyrinth:
-  Can Access Secret Cave Entrance on Outset Island
-Can Access Dragon Roost Island Secret Cave:
-  Can Access Secret Cave Entrance on Dragon Roost Island
+  Can Access Covered Opening on Outset Island
+Can Access Dragon Roost Island Mysterious Cave:
+  Can Access Buried Pit on Dragon Roost Island
 Can Access Fire Mountain Secret Cave:
-  Can Access Secret Cave Entrance on Fire Mountain
+  Can Access Crater on Fire Mountain
 Can Access Ice Ring Isle Secret Cave:
-  Can Access Secret Cave Entrance on Ice Ring Isle
+  Can Access Palsa on Ice Ring Isle
 Can Access Cabana Labyrinth:
-  Can Access Secret Cave Entrance on Private Oasis
-Can Access Needle Rock Isle Secret Cave:
-  Can Access Secret Cave Entrance on Needle Rock Isle
-Can Access Angular Isles Secret Cave:
-  Can Access Secret Cave Entrance on Angular Isles
-Can Access Boating Course Secret Cave:
-  Can Access Secret Cave Entrance on Boating Course
-Can Access Stone Watcher Island Secret Cave:
-  Can Access Secret Cave Entrance on Stone Watcher Island
-Can Access Overlook Island Secret Cave:
-  Can Access Secret Cave Entrance on Overlook Island
+  Can Access Hearth on Private Oasis
+Can Access Needle Rock Isle Torches Cave:
+  Can Access Frozen-Over Pit on Needle Rock Isle
+Can Access Angular Isles Light Puzzle Cave:
+  Can Access Hole in Angular Isles
+Can Access Boating Course Diamond Switches Cave:
+  Can Access Firth on Boating Course
+Can Access Stone Watcher Island Combat Trial:
+  Can Access Sheltered Hole on Stone Watcher Island
+Can Access Overlook Island Combat Trial:
+  Can Access Geo on Overlook Island
 Can Access Bird's Peak Rock Secret Cave:
-  Can Access Secret Cave Entrance on Bird's Peak Rock
+  Can Access Drop Behind Bars on Bird's Peak Rock
 Can Access Pawprint Isle Chuchu Cave:
-  Can Access Secret Cave Entrance on Pawprint Isle
+  Can Access Cave Opening in Shell on Pawprint Isle
 Can Access Pawprint Isle Wizzrobe Cave:
-  Can Access Secret Cave Entrance on Pawprint Isle Side Isle
+  Can Access Side Isle Inlet on Pawprint Isle
 Can Access Diamond Steppe Island Warp Maze Cave:
-  Can Access Secret Cave Entrance on Diamond Steppe Island
-Can Access Bomb Island Secret Cave:
-  Can Access Secret Cave Entrance on Bomb Island
-Can Access Rock Spire Isle Secret Cave:
-  Can Access Secret Cave Entrance on Rock Spire Isle
-Can Access Shark Island Secret Cave:
-  Can Access Secret Cave Entrance on Shark Island
-Can Access Cliff Plateau Isles Secret Cave:
-  Can Access Secret Cave Entrance on Cliff Plateau Isles
-Can Access Horseshoe Island Secret Cave:
-  Can Access Secret Cave Entrance on Horseshoe Island
-Can Access Star Island Secret Cave:
-  Can Access Secret Cave Entrance on Star Island
+  Can Access Geo on Diamond Steppe Island
+Can Access Bomb Island Magtail Cave:
+  Can Access Crater on Bomb Island
+Can Access Rock Spire Isle Keese Cave:
+  Can Access Drop on Rock Spire Isle
+Can Access Shark Island Enemy Hell Cave:
+  Can Access Protected Entry on Shark Island
+Can Access Cliff Plateau Isles Floating Plants Cave:
+  Can Access Inlet on Cliff Plateau Isles
+Can Access Horseshoe Island Mothula Cave:
+  Can Access Firth on Horseshoe Island
+Can Access Star Island Combat Cave:
+  Can Access Cave Opening on Star Island
+
+Can Access Five-Star Bokoblin Submarine:
+  Can Access Five-Star Sub Hatch
+Can Access Bomb Island Bokoblin Submarine:
+  Can Access Bomb Island Sub Hatch
+Can Access Crescent Moon Miniblin Submarine:
+  Can Access Crescent Moon Sub Hatch
+Can Access Northern Fairy Moblin Submarine:
+  Can Access Northern Fairy Sub Hatch
+Can Access Headstone Bombchu Submarine:
+  Can Access Headstone Sub Hatch
+Can Access Birdman Wizzrobe Submarine:
+  Can Access Birdman Sub Hatch
+Can Access Six-Eye Moblin Submarine:
+  Can Access Six-Eye Sub Hatch
 
 Can Get Past Forsaken Fortress Gate:
   (
@@ -522,10 +621,10 @@ Can Obtain 15 Blue Chu Jelly:
     | Bombs
     | Grappling Hook
     | Hookshot
-    | (Can Access Secret Cave Entrance on Shark Island & Can Fly With Deku Leaf Outdoors)
+    | (Can Access Protected Entry on Shark Island & Can Fly With Deku Leaf Outdoors)
     | Can Access Other Location "Cliff Plateau Isles - Highest Isle"
     | Deku Leaf
-    | Can Access Secret Cave Entrance on Boating Course
+    | Can Access Firth on Boating Course
   )
   & Spoils Bag
   # Full list of Blue ChuChus:
@@ -1153,10 +1252,6 @@ Can Travel to Northern Fairy Island:
   )
   | Can Travel to any Island
 
-Can Travel to Northern Fairy Island Sub:
-  (Can Travel to Northern Fairy Island & Can Sail)
-  | Can Travel to any Island
-
 Can Travel to Gale Isle:
   (
     Can Travel to Windfall Island
@@ -1173,10 +1268,6 @@ Can Travel to Crescent Moon Island:
     Can Travel to Dragon Roost Island
     & Can Sail
   )
-  | Can Travel to any Island
-
-Can Travel to Crescent Moon Island Sub:
-  (Can Travel to Crescent Moon Island & Can Sail)
   | Can Travel to any Island
 
 Can Travel to Seven-Star Isles:
@@ -1239,10 +1330,6 @@ Can Travel to Flight Control Platform:
     Can Travel to Dragon Roost Island
     & Can Sail
   )
-  | Can Travel to any Island
-
-Can Travel to Flight Control Platform Sub:
-  (Can Travel to Flight Control Platform & Can Sail)
   | Can Travel to any Island
 
 Can Travel to Western Fairy Island:
@@ -1410,10 +1497,6 @@ Can Travel to Bomb Island:
   )
   | Can Travel to any Island
 
-Can Travel to Bomb Island Sub:
-  (Can Travel to Bomb Island & Can Sail)
-  | Can Travel to any Island
-
 Can Travel to Bird's Peak Rock:
   (
     Can Travel to Tower of the Gods
@@ -1488,10 +1571,6 @@ Can Travel to Headstone Island:
   )
   | Can Travel to any Island
 
-Can Travel to Headstone Island Sub:
-  (Can Travel to Headstone Island & Can Sail)
-  | Can Travel to any Island
-
 Can Travel to Two-Eye Reef:
   (
     Can Travel to Southern Fairy Island
@@ -1522,10 +1601,6 @@ Can Travel to Five-Star Isles:
     Can Travel to Forest Haven
     & Can Sail
   )
-  | Can Travel to any Island
-
-Can Travel to Five-Star Isles Sub:
-  (Can Travel to Five-Star Isles & Can Sail)
   | Can Travel to any Island
 
 Can Travel to Postbox:

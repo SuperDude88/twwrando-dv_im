@@ -71,24 +71,8 @@ Outset Island - Orca - Hit 500 Times:
 #  Original item: Silver Rupee
 #  Paths:
 #    - rels/d_a_npc_ji1.rel@42EF
-Outset Island - Great Fairy:
-  Need:
-    (
-      (Can Cut Down Outset Trees | Tricked Logic)
-      & Can Fly With Deku Leaf Outdoors
-      & (Can Move Boulders | Complex Logic)
-      & Can Travel to Outset Island
-    ) | (
-      Complex Logic
-      & Can Move Boulders
-      & Bait Bag
-      & Hero's Bow
-    ) | (
-      Can Move Boulders
-      & Can Door Cancel
-      & Can Play Fish Minigame
-      & Complex Logic
-    )
+Outset Island - Forest of Fairies - Great Fairy:
+  Need: Can Access Forest of Fairies Fountain
   Original item: 5000 Rupee Wallet
   Types: Great Fairy
   Locale: Outset Island
@@ -1008,7 +992,7 @@ Dragon Roost Island - Rito Aerie - Baito:
     - Atorizk/Stage.arc/Event003:GETMOTHERLETTER/Actor000/Action000
 Dragon Roost Island - Secret Cave:
   Need:
-    Can Access Dragon Roost Island Secret Cave
+    Can Access Dragon Roost Island Mysterious Cave
     & Can Defeat Keese
     & Can Defeat Red ChuChus
   # 4 Keese and 3 pots - it doesn't seem possible to kill all 4 without having 4 pots.
@@ -2325,10 +2309,10 @@ Headstone Island - Top of the Island:
   Locale: Headstone Island
   Paths:
     - sea/Room45.arc/Actor013
-Headstone Island - Submarine:
+Headstone Island - Bombchu Submarine:
   Need:
     Can Defeat Bombchus
-    & Can Travel to Headstone Island Sub
+    & Can Access Headstone Bombchu Submarine
   Original item: Treasure Chart 14
   Types: Submarine
   Locale: Headstone Island
@@ -2337,7 +2321,7 @@ Headstone Island - Submarine:
     - Abship/Room5.arc/Chest000
 
 Headstone Island - Inside Island:
-  Need: Can Access Dungeon Entrance On Headstone Island
+  Need: Can Access Shrine to Laruto on Headstone Island
   Original item: Earth God's Lyric
   Types: Island Puzzle
   Locale: Headstone Island, dv_im
@@ -2822,7 +2806,7 @@ Earth Temple - Jalhalla Heart Container:
 
 
 Gale Isle - Inside Island:
-  Need: Can Access Dungeon Entrance On Gale Isle
+  Need: Can Access Shrine to Fado on Gale Isle
   Original item: Wind God's Aria
   Types: Island Puzzle
   Locale: Gale Isle, dv_im
@@ -3409,7 +3393,7 @@ Needle Rock Isle - Chest:
     - sea/Room29.arc/Chest000
 Needle Rock Isle - Cave:
   Need:
-    Can Access Needle Rock Isle Secret Cave
+    Can Access Needle Rock Isle Torches Cave
     & Fire Arrows
   Original item: Orange Rupee
   Types: Puzzle Secret Cave
@@ -3439,7 +3423,7 @@ Angular Isles - Cave:
   Need:
     # Mirror Shield is to shine light on the chest and make it not be transparent.
     # Either Deku Leaf or Hookshot are needed to reach the chest in the cave.
-    Can Access Angular Isles Secret Cave
+    Can Access Angular Isles Light Puzzle Cave
     & Can Aim Mirror Shield
     & (Deku Leaf | Hookshot)
   Original item: Silver Rupee
@@ -3457,7 +3441,7 @@ Boating Course - Raft:
     - sea/Room48.arc/Chest000
 Boating Course - Cave:
   Need:
-    Can Access Boating Course Secret Cave
+    Can Access Boating Course Diamond Switches Cave
     & Can Hit Diamond Switches at Range
     & Can Defeat Miniblins Easily
     # Hitting the 3 diamond switches inside the cave needs a ranged weapon.
@@ -3470,7 +3454,7 @@ Boating Course - Cave:
 
 Stone Watcher Island - Cave:
   Need:
-    Can Access Stone Watcher Island Secret Cave
+    Can Access Stone Watcher Island Combat Trial
     & Can Defeat Armos
     & Can Defeat Wizzrobes
     & Can Defeat Darknuts
@@ -3524,7 +3508,7 @@ Islet of Steel - Lookout Platform - Defeat the Enemies:
 
 Overlook Island - Cave:
   Need:
-    Can Access Overlook Island Secret Cave
+    Can Access Overlook Island Combat Trial
     & Can Defeat Stalfos
     & Can Defeat Wizzrobes
     & Can Defeat Red ChuChus
@@ -3631,12 +3615,7 @@ Pawprint Isle - Lookout Platform - Defeat the Enemies:
     - sea/Room12.arc/Chest000
 
 Thorned Fairy Island - Great Fairy:
-  Need:
-    (
-      Skull Hammer
-      | (Complex Logic & Can Door Cancel)
-    )
-    & Can Travel to Thorned Fairy Island
+  Need: Can Access Thorned Fairy Fountain
   Original item: 99 Arrow Quiver
   Types: Great Fairy
   Locale: Thorned Fairy Island
@@ -3665,12 +3644,7 @@ Thorned Fairy Island - Southwestern Lookout Platform - Defeat the Enemies:
     - sea/Room28.arc/Chest001
 
 Eastern Fairy Island - Great Fairy:
-  Need:
-    (
-      Can Move Boulders
-      | (Complex Logic & Can Door Cancel)
-    )
-    & Can Travel to Eastern Fairy Island
+  Need: Can Access Eastern Fairy Fountain
   Original item: 60 Bomb Bomb Bag
   Types: Great Fairy
   Locale: Eastern Fairy Island
@@ -3686,9 +3660,7 @@ Eastern Fairy Island - Lookout Platform - Defeat the Cannons and Enemies:
     - sea/Room19.arc/Chest000
 
 Western Fairy Island - Great Fairy:
-  Need:
-    (Skull Hammer | (Complex Logic & Can Door Cancel))
-    & Can Travel to Western Fairy Island
+  Need: Can Access Western Fairy Fountain
   Original item: 60 Arrow Quiver
   Types: Great Fairy
   Locale: Western Fairy Island
@@ -3703,19 +3675,7 @@ Western Fairy Island - Lookout Platform:
     - sea/Room15.arc/Chest000
 
 Southern Fairy Island - Great Fairy:
-  # Can either blow up or burn the blockade
-  Need:
-    (
-      Bombs
-      | Fire Arrows
-      | (Complex Logic & Can Door Cancel)
-      | (
-        Wind Waker
-        & Can Sail
-        & Tricked Logic
-      )
-    )
-    & Can Travel to Southern Fairy Island
+  Need: Can Access Southern Fairy Fountain
   Original item: 99 Bomb Bomb Bag
   Types: Great Fairy
   Locale: Southern Fairy Island
@@ -3745,14 +3705,14 @@ Southern Fairy Island - Lookout Platform - Destroy the Southeast Cannons:
     - sea/Room39.arc/Chest001
 
 Northern Fairy Island - Great Fairy:
-  Need: Can Travel to Northern Fairy Island
+  Need: Can Access Northern Fairy Fountain
   Original item: 1000 Rupee Wallet
   Types: Great Fairy
   Locale: Northern Fairy Island
   Paths:
     - rels/d_a_bigelf.rel@21BB
-Northern Fairy Island - Submarine:
-  Need: Can Travel to Northern Fairy Island Sub
+Northern Fairy Island - Moblin Submarine:
+  Need: Can Access Northern Fairy Moblin Submarine
     # No need to kill the Moblins here.
   Original item: Treasure Chart 22
   Types: Submarine
@@ -3880,7 +3840,7 @@ Diamond Steppe Island - Big Octo:
 
 Bomb Island - Cave:
   Need:
-    Can Access Bomb Island Secret Cave
+    Can Access Bomb Island Magtail Cave
     & Can Stun Magtails
   Original item: Piece of Heart
   Types: Mixed Secret Cave
@@ -3895,8 +3855,8 @@ Bomb Island - Lookout Platform - Defeat the Enemies:
   Locale: Bomb Island
   Paths:
     - sea/Room34.arc/Chest000
-Bomb Island - Submarine:
-  Need: Can Travel to Bomb Island Sub
+Bomb Island - Bokoblin Submarine:
+  Need: Can Access Bomb Island Bokoblin Submarine
     # You can throw pots and barrels at the Blue and Green Bokoblins to make them drop a weapon, then use it to kill them.
   Original item: Empty Bottle
   Types: Submarine
@@ -3905,7 +3865,7 @@ Bomb Island - Submarine:
     - Abship/Room2.arc/Chest000
 
 Rock Spire Isle - Cave:
-  Need: Can Access Rock Spire Isle Secret Cave
+  Need: Can Access Rock Spire Isle Keese Cave
     # The Keese in the cave can be killed with nothing but the stick in there.
   Original item: Treasure Chart 37
   Types: Combat Secret Cave
@@ -3994,7 +3954,7 @@ Rock Spire Isle - Southeast Gunboat:
 
 Shark Island - Cave:
   Need:
-    Can Access Shark Island Secret Cave
+    Can Access Shark Island Enemy Hell Cave
     & Can Defeat Miniblins
     & (Can Cut or Slash | Tricked Logic)
     & Convenient Bottle
@@ -4009,7 +3969,7 @@ Shark Island - Cave:
 Cliff Plateau Isles - Cave:
   Need:
     (
-      Can Access Cliff Plateau Isles Secret Cave
+      Can Access Cliff Plateau Isles Floating Plants Cave
       & Can Defeat Boko Babas
     ) | (
       (Deku Leaf | Hookshot)
@@ -4027,7 +3987,7 @@ Cliff Plateau Isles - Cave:
 Cliff Plateau Isles - Highest Isle:
   Need:
     (
-      Can Access Cliff Plateau Isles Secret Cave
+      Can Access Cliff Plateau Isles Floating Plants Cave
       | (Complex Logic & Can Travel to Cliff Plateau Isles)
     ) & (Can Defeat Boko Babas | Complex Logic)
     & (
@@ -4035,7 +3995,7 @@ Cliff Plateau Isles - Highest Isle:
       | (
         Tricked Logic
         & Wind Waker
-        & Can Access Cliff Plateau Isles Secret Cave
+        & Can Access Cliff Plateau Isles Floating Plants Cave
       )
       | (
         (Deku Leaf | Hookshot)
@@ -4063,8 +4023,8 @@ Crescent Moon Island - Chest:
   Locale: Crescent Moon Island
   Paths:
     - sea/Room5.arc/Chest000
-Crescent Moon Island - Submarine:
-  Need: Can Defeat Miniblins & Can Travel to Crescent Moon Island Sub
+Crescent Moon Island - Miniblin Submarine:
+  Need: Can Defeat Miniblins & Can Access Crescent Moon Miniblin Submarine
     # You only need to defeat the very first Miniblin, then wait out the timer.
   Original item: Treasure Chart 9
   Types: Submarine
@@ -4085,7 +4045,7 @@ Horseshoe Island - Play Golf:
     - sea/Room43.arc/Chest000
 Horseshoe Island - Cave:
   Need:
-    Can Access Horseshoe Island Secret Cave
+    Can Access Horseshoe Island Mothula Cave
     & Can Defeat Mothulas
     & Can Defeat Winged Mothulas
   Original item: Treasure Chart 8
@@ -4131,7 +4091,7 @@ Flight Control Platform - Bird-Man Contest - First Prize:
 #  Original item: Purple Rupee
 #  Paths:
 #    - rels/d_a_npc_bmcon1.rel@2B9F
-Flight Control Platform - Submarine:
+Flight Control Platform - Wizzrobe Submarine:
   Need:
     (
       (
@@ -4145,7 +4105,7 @@ Flight Control Platform - Submarine:
         & Complex Logic
       )
     )
-    & Can Travel to Flight Control Platform Sub
+    & Can Access Birdman Wizzrobe Submarine
   Original item: Platform Chart
   Types: Submarine
   Locale: Flight Control Platform
@@ -4154,7 +4114,7 @@ Flight Control Platform - Submarine:
 
 Star Island - Cave:
   Need:
-    Can Access Star Island Secret Cave
+    Can Access Star Island Combat Cave
     & Can Defeat Magtails
     # After the Magtails, the second wave are Blue Bokoblins, so you can trick them into attacking each other, steal a stick, and use that to kill the remaining enemies: Green Bokoblins and Moblins.
   Original item: Piece of Heart
@@ -4186,14 +4146,14 @@ Five-Star Isles - Lookout Platform - Destroy the Cannons:
   Paths:
     - sea/Room49.arc/Chest001
 Five-Star Isles - Raft:
-  Need: Can Travel to Five-Star Isles Sub
+  Need: Can Access Five-Star Sub Hatch
   Original item: Red Rupee
   Types: Raft
   Locale: Five-Star Isles
   Paths:
     - sea/Room49.arc/Chest000
 Five-Star Isles - Submarine:
-  Need: Can Travel to Five-Star Isles Sub
+  Need: Can Access Five-Star Bokoblin Submarine
     # You need to defeat Green Bokoblins and Blue Bokoblins here, but you can throw pots at them and then steal their weapons.
   Original item: Piece of Heart
   Types: Submarine
@@ -4357,8 +4317,8 @@ Six-Eye Reef - Lookout Platform - Destroy the Cannons:
   Locale: Six-Eye Reef
   Paths:
     - sea/Room25.arc/Chest001
-Six-Eye Reef - Submarine:
-  Need: Can Travel to Six-Eye Reef & Can Sail
+Six-Eye Reef - Moblin Submarine:
+  Need: Can Access Six-Eye Moblin Submarine
     # There are Moblins here, but you can throws pots and barrels at one to get a weapon.
   Original item: Piece of Heart
   Types: Submarine

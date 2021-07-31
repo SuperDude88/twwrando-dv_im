@@ -199,9 +199,8 @@ class GCM:
       yield("sys/main.dol", 5) # 5 system files
 
       generator = self.export_filesystem_to_iso()
-      while True:
+      for next_progress_text, files_done in generator:
         # Need to use a while loop to go through the generator instead of a for loop, as a for loop would silently exit if a StopIteration error ever happened for any reason.
-        next_progress_text, files_done = next(generator)
         if files_done == -1:
           break
         yield(next_progress_text, 5+files_done)

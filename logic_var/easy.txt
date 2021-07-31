@@ -107,7 +107,7 @@ Dragon Roost Island - Fly Across Platforms Around Island:
 Dragon Roost Island - Secret Cave:
   Mode: o
   Need:
-    Can Access Dragon Roost Island Secret Cave
+    Can Access Dragon Roost Island Mysterious Cave
     & Can Defeat Keese
     & Can Defeat Red ChuChus
 
@@ -546,9 +546,6 @@ Headstone Island - Top of the Island:
   Mode: o
   Need:
     Bait Bag & Can Travel to Headstone Island
-Headstone Island - Submarine:
-  Mode: o
-  Need: Can Defeat Bombchus & Can Travel to Headstone Island Sub
 
 Earth Temple - Transparent Chest In Warp Pot Room:
   Mode: o
@@ -1051,7 +1048,7 @@ Needle Rock Isle - Chest:
 Needle Rock Isle - Cave:
   Mode: o
   Need:
-    Can Access Needle Rock Isle Secret Cave
+    Can Access Needle Rock Isle Torches Cave
     & Fire Arrows
     & Can Travel to Needle Rock Isle
 Needle Rock Isle - Golden Gunboat:
@@ -1067,7 +1064,7 @@ Angular Isles - Peak:
 Angular Isles - Cave:
   Mode: o
   Need:
-    Can Access Angular Isles Secret Cave
+    Can Access Angular Isles Light Puzzle Cave
     & Can Aim Mirror Shield
     & (
       Deku Leaf
@@ -1080,14 +1077,14 @@ Boating Course - Raft:
 Boating Course - Cave:
   Mode: o
   Need:
-    Can Access Boating Course Secret Cave
+    Can Access Boating Course Diamond Switches Cave
     & Can Hit Diamond Switches at Range
     & Can Defeat Miniblins Easily
 
 Stone Watcher Island - Cave:
   Mode: o
   Need:
-    Can Access Stone Watcher Island Secret Cave
+    Can Access Stone Watcher Island Combat Trial
     & Can Defeat Armos
     & Can Defeat Wizzrobes
     & Can Defeat Darknuts
@@ -1114,7 +1111,7 @@ Islet of Steel - Lookout Platform - Defeat the Enemies:
 Overlook Island - Cave:
   Mode: o
   Need:
-    Can Access Overlook Island Secret Cave
+    Can Access Overlook Island Combat Trial
     & Can Defeat Stalfos
     & Can Defeat Wizzrobes
     & Can Defeat Red ChuChus
@@ -1223,9 +1220,6 @@ Southern Fairy Island - Lookout Platform - Destroy the Southeast Cannons:
 Northern Fairy Island - Great Fairy:
   Mode: o
   Need: Can Travel to Northern Fairy Island
-Northern Fairy Island - Submarine:
-  Mode: o
-  Need: Can Travel to Northern Fairy Island Sub
 
 Tingle Island - Ankle - Reward for All Tingle Statues:
   Mode: o
@@ -1266,20 +1260,17 @@ Diamond Steppe Island - Big Octo:
 Bomb Island - Cave:
   Mode: o
   Need:
-    Can Access Bomb Island Secret Cave
+    Can Access Bomb Island Magtail Cave
     & Can Stun Magtails
 Bomb Island - Lookout Platform - Defeat the Enemies:
   Mode: o
   Need:
     Can Cut or Slash
     & Can Travel to Bomb Island
-Bomb Island - Submarine:
-  Mode: o
-  Need: Can Travel to Bomb Island Sub
 
 Rock Spire Isle - Cave:
   Mode: o
-  Need: Can Access Rock Spire Isle Secret Cave
+  Need: Can Access Rock Spire Isle Keese Cave
 Rock Spire Isle - Beedle's Special Shop Ship - 500 Rupee Item:
   Mode: o
   Need:
@@ -1326,19 +1317,19 @@ Rock Spire Isle - Gunboat:
 Shark Island - Cave:
   Mode: o
   Need:
-    Can Access Shark Island Secret Cave
+    Can Access Shark Island Enemy Hell Cave
     & Can Defeat Miniblins
     & Can Defeat Darknuts
 
 Cliff Plateau Isles - Cave:
   Mode: o
   Need:
-    Can Access Cliff Plateau Isles Secret Cave
+    Can Access Cliff Plateau Isles Floating Plants Cave
     & Can Defeat Boko Babas
 Cliff Plateau Isles - Highest Isle:
   Mode: o
   Need:
-    Can Access Cliff Plateau Isles Secret Cave
+    Can Access Cliff Plateau Isles Floating Plants Cave
     & Can Defeat Boko Babas
     & Deku Leaf
 Cliff Plateau Isles - Lookout Platform:
@@ -1348,9 +1339,6 @@ Cliff Plateau Isles - Lookout Platform:
 Crescent Moon Island - Chest:
   Mode: o
   Need: Can Travel to Crescent Moon Island
-Crescent Moon Island - Submarine:
-  Mode: o
-  Need: Can Defeat Miniblins & Can Travel to Crescent Moon Island Sub
 
 Horseshoe Island - Play Golf:
   Mode: o
@@ -1361,7 +1349,7 @@ Horseshoe Island - Play Golf:
 Horseshoe Island - Cave:
   Mode: o
   Need:
-    Can Access Horseshoe Island Secret Cave
+    Can Access Horseshoe Island Mothula Cave
     & Can Defeat Mothulas
     & Can Defeat Winged Mothulas
 Horseshoe Island - Northwestern Lookout Platform:
@@ -1377,20 +1365,11 @@ Flight Control Platform - Bird-Man Contest - First Prize:
     Can Fly With Deku Leaf Outdoors
     & Magic Meter Upgrade
     & Can Travel to Flight Control Platform
-Flight Control Platform - Submarine:
-  Mode: o
-  Need:
-    Can Defeat Wizzrobes
-    & Can Defeat Red ChuChus
-    & Can Defeat Green ChuChus
-    & Can Defeat Miniblins
-    & Can Defeat Wizzrobes at Range
-    & Can Travel to Flight Control Platform Sub
 
 Star Island - Cave:
   Mode: o
   Need:
-    Can Access Star Island Secret Cave
+    Can Access Star Island Combat Cave
     & Can Defeat Magtails
 Star Island - Lookout Platform:
   Mode: o
@@ -1404,9 +1383,6 @@ Five-Star Isles - Lookout Platform - Destroy the Cannons:
   Mode: o
   Need: Can Destroy Cannons & Can Travel to Star Belt Archipelago
 Five-Star Isles - Raft:
-  Mode: o
-  Need: Can Travel to Star Belt Archipelago
-Five-Star Isles - Submarine:
   Mode: o
   Need: Can Travel to Star Belt Archipelago
 
@@ -1487,6 +1463,3 @@ Six-Eye Reef - Destroy the Cannons and Gunboats:
 Six-Eye Reef - Lookout Platform - Destroy the Cannons:
   Mode: o
   Need: Can Destroy Cannons & Can Travel to Six-Eye Reef & Boat's Sail
-Six-Eye Reef - Submarine:
-  Mode: o
-  Need: Can Travel to Six-Eye Reef Sub
