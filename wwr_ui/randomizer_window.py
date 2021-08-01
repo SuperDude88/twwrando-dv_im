@@ -815,11 +815,12 @@ class WWRandomizerWindow(QMainWindow):
 
     for byte in bitswriter.bytes:
       permalink += struct.pack(">B", byte)
-    base64_encoded_permalink = base64.b64encode(permalink).decode("ascii")
+    base64_encoded_permalink = 'DV' + base64.b64encode(permalink).decode("ascii")
     self.ui.permalink.setText(base64_encoded_permalink)
 
   def decode_permalink(self, base64_encoded_permalink):
     base64_encoded_permalink = base64_encoded_permalink.strip()
+    base64_encoded_permalink = base64_encoded_permalink[2:]
     if not base64_encoded_permalink:
       # Empty
       return
