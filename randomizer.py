@@ -9,6 +9,7 @@ from collections import OrderedDict
 import hashlib
 import yaml
 import tweaks
+import tourney_auth
 
 from fs_helpers import *
 from wwlib.yaz0 import Yaz0
@@ -20,7 +21,7 @@ from wwlib.jpc import JPC
 import tweaks
 from asm import patcher
 from logic.logic import Logic
-from paths import DATA_PATH, ASM_PATH, RANDO_ROOT_PATH, IS_RUNNING_FROM_SOURCE
+from paths import *
 import customizer
 from wwlib import stage_searcher
 from asm import disassemble
@@ -88,6 +89,8 @@ class Randomizer:
     self.export_disc_to_folder = ("-exportfolder" in cmd_line_args)
     self.no_logs = ("-nologs" in cmd_line_args)
     self.bulk_test = ("-bulk" in cmd_line_args)
+    self.tourney_mod = ("-tourney_mod" in cmd_line_args)
+    self.tourney_auth = ""
     if self.bulk_test:
       self.dry_run = True
       self.no_logs = True
@@ -110,8 +113,6 @@ class Randomizer:
     spoilerList = [self.options.get("progression_check_spoiler_log"), self.options.get("all_check_spoiler_log"), self.options.get("entrance_spoiler_log"), self.options.get("chart_spoiler_log")]
 
     seed_string = self.seed
-    if self.options.get("generate_spoiler_log"):
-      seed_string += self.getSeedStr(SEED_KEY,spoilerList)
     seed_string += self.logic_mod
 
     self.integer_seed = self.convert_string_to_integer_md5(seed_string)
@@ -423,6 +424,10 @@ class Randomizer:
       if self.test_room_args is not None:
         tweaks.test_room(self)
     options_completed += 1
+    if self.tourney_mod:
+      self.tourney_auth = GET_TOURNEYAUTH()
+      if self.tourney_auth and not IS_RUNNING_FROM_SOURCE:
+        print("Hi, things aren't like they are supposed to.")
 
     yield("Randomizing...", options_completed)
 
