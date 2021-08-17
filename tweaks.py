@@ -2489,3 +2489,34 @@ def show_number_of_tingle_statues_on_quest_status_screen(self):
     "Golden statues of a mysterious, dashing figure. They can be traded with \\{1A 06 FF 00 00 01}Ankle\\{1A 06 FF 00 00 00} on \\{1A 06 FF 00 00 01}Tingle Island\\{1A 06 FF 00 00 00} for a reward!",
     max_line_length=43
   )
+
+def set_beedle_membership_points(self):
+  silver_membership_points = self.options.get("silver_points")
+  silver_points_address = self.main_custom_symbols["beedle_silver_membership_points"]
+  gold_membership_points = self.options.get("gold_points")
+  gold_points_address = self.main_custom_symbols["beedle_gold_membership_points"]
+  beedle_rel = self.get_rel("files/rels/d_a_npc_bs1.rel")
+  beedle_rel.write_data(write_u8, silver_points_address, silver_membership_points)
+  beedle_rel.write_data(write_u8, gold_points_address, gold_membership_points)
+  
+def update_beedle_text(self):
+  silver_membership_points = self.options.get("silver_points")
+  gold_membership_points = self.options.get("gold_points")
+  msg = self.bmg.messages_by_id[3919]
+  lines = msg.string.split("\n")
+  lines[4] = "You should try to save up \\{1A 06 FF 00 00 01}" + silver_membership_points + " points\\{1A 06 FF 00 00 00}, so you\n"
+  msg = self.bmg.messages_by_id[3920]
+  lines = msg.string.split("\n")
+  lines[0] = "OHHHHH! You saved up \\{1A 06 FF 00 00 01}" + silver_membership_points + " points\\{1A 06 FF 00 00 00}!"
+  msg = self.bmg.messages_by_id[3922]
+  lines = msg.string.split("\n")
+  lines[5] = "\\{1A 06 FF 00 00 01}" + gold_membership_points + " points\\{1A 06 FF 00 00 00} to earn our Gold Membership!"
+  msg = self.bmg.messages_by_id[3923]
+  lines = msg.string.split("\n")
+  lines[0] = "OHHHHH! You've saved up \\{1A 06 FF 00 00 01}" + gold_membership_points + " points\\{1A 06 FF 00 00 00}!"
+  msg = self.bmg.messages_by_id[3958]
+  lines = msg.string.split("\n")
+  lines[8] = " Since you have earned " + gold_membership_points + " points, you have\n"
+  msg = self.bmg.messages_by_id[3959]
+  lines = msg.string.split("\n")
+  lines[9] = " earned " + gold_membership_points + " shopping points. This entitles\n"
