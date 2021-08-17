@@ -586,6 +586,8 @@ class Randomizer:
     tweaks.fix_message_closing_sound_on_quest_status_screen(self)
     tweaks.fix_stone_head_bugs(self)
     tweaks.show_number_of_tingle_statues_on_quest_status_screen(self)
+    tweaks.set_beedle_membership_points(self)
+    tweaks.update_beedle_text(self)
 
     customizer.replace_link_model(self)
     tweaks.change_starting_clothes(self)
