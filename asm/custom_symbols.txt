@@ -122,3 +122,6 @@ sys/main.dol:
   test_room_override_layer_num: 0x800531EB
 files/rels/d_a_fganon.rel:
   phantom_ganon_check_link_within_y_diff: 0xB020
+files/rels/d_a_npc_bs1.rel:
+  beedle_silver_membership_points: 0x2017
+  beedle_gold_membership_points: 0x1FE7
