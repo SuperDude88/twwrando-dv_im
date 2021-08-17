@@ -550,6 +550,18 @@ OPTIONS = OrderedDict([
     "randomize_enemies",
     "Randomizes the placement of non-boss enemies."
   ),
+  (
+    "silver_membership_points",
+    "Sets the number of points you need to get Beedle's silver membership."
+  ),
+  (
+    "gold_membership_points",
+    "Sets the number of points you need to get Beedle's gold membership."
+  ),
+  (
+    "randomize_membership_points",
+    "Randomizes the placement of non-boss enemies."
+  ),
 ])
 
 NON_PERMALINK_OPTIONS = [
